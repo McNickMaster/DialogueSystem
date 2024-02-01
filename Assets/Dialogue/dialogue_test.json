@@ -1,0 +1,70 @@
+{"Conversation":[
+    {"Path":[
+    
+        {"Slide": [
+            {
+                "Title":"K9 Edo"
+            },
+            {
+                "Text":"woof 1"
+            }
+        ]},
+    
+        {"Slide": [
+            {
+                "Title":"You"
+            },
+            {
+                "Text":"hello"
+            }
+        ]},
+    
+        {"Slide": [
+            {
+                "Title":"K9 Edo"
+            },
+            {
+                "Text":"woof 2"
+            }
+        ]},
+    
+        {"Slide": [
+            {
+                "Title":"K9 Edo"
+            },
+            {
+                "Text":"woof 3"
+            }
+        ]}
+    ]},
+    {"Path":[
+    
+        {"Slide": [
+            {
+                "Title":"K10 Edo"
+            },
+            {
+                "Text":"woof 1"
+            }
+        ]},
+    
+        {"Slide": [
+            {
+                "Title":"You"
+            },
+            {
+                "Text":"hello"
+            }
+        ]},
+    
+        {"Slide": [
+            {
+                "Title":"K10 Edo"
+            },
+            {
+                "Text":"woof 2"
+            }
+        ]}
+    ]}
+]
+}
