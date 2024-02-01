@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 262251922}
   - component: {fileID: 262251924}
   - component: {fileID: 262251923}
+  - component: {fileID: 262251925}
   m_Layer: 0
   m_Name: DialogueManager
   m_TagString: Untagged
@@ -163,12 +164,26 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 262251921}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c04e303623af1f44ba00c6f23265978f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fileName: dialogue_test
+  myPathList: []
 --- !u!114 &262251924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 262251921}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dee60c32a0c245248bd5ffcf6ca76052, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &262251925
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -177,9 +192,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 262251921}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dee60c32a0c245248bd5ffcf6ca76052, type: 3}
+  m_Script: {fileID: 11500000, guid: 7f294eda6da782544b13df5fd1d198f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fileName: test2
+  data: []
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0

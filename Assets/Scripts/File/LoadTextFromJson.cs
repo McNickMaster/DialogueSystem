@@ -43,13 +43,7 @@ public class LoadTextFromJson : MonoBehaviour
         LoadJson(fileName);
     }
 
-/*
-    okay so this is great but it only works with convos that are 1 branch
-
-    how tf am i gonna find all the branches
-
-
-*/
+    
 
     public void LoadJson(string file)
     {

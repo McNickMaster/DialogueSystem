@@ -33,3 +33,8 @@ because for depth 0 in branch 0, the 0th digit incremented (twice!) so there is 
 	for depth 1 in branch 1, the digits did not increment in the 1 branch in the first place (11,111,1111,112,1121)
 	for depth 2 in branch 1, the 2nd digit incremented, so there is a branch at everything in the 2nd place 
 	for depth 
+
+
+
+break up csv file into json based on branches
+each json is a branch
