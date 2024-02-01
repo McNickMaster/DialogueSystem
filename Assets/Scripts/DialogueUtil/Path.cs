@@ -4,18 +4,19 @@ using UnityEngine;
 using System;
 
 [Serializable]
-public class PathObj
+public class Path
 {
-    public SlideObj[] slides;
-    public SlideObj endSlide;
+    public Slide[] slides;
+    public Slide endSlide;
+    public Branch parentBranch;
 
-/*
+
     public Path(Slide[] slides)
     {
         this.slides = slides;
-
+        endSlide = slides[slides.Length-1];
     }
-    */
+    
 
 
 

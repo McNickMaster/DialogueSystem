@@ -1,70 +1,49 @@
 {"Conversation":[
     {"Path":[
     
-        {"Slide": [
-            {
-                "Title":"K9 Edo"
-            },
-            {
-                "Text":"woof 1"
-            }
-        ]},
+        {"Slide": {
+            "Title":"K9 Edo",
+            "Body":"woof 1"
+
+        }},
+
+        {"Slide": {
+            "Title":"You",
+            "Body":"Hello"
+
+        }},
     
-        {"Slide": [
-            {
-                "Title":"You"
-            },
-            {
-                "Text":"hello"
-            }
-        ]},
+        {"Slide": {
+            "Title":"K9 Edo",
+            "Body":"woof 2"
+
+        }},
     
-        {"Slide": [
-            {
-                "Title":"K9 Edo"
-            },
-            {
-                "Text":"woof 2"
-            }
-        ]},
-    
-        {"Slide": [
-            {
-                "Title":"K9 Edo"
-            },
-            {
-                "Text":"woof 3"
-            }
-        ]}
+        {"Slide": {
+            "Title":"K9 Edo",
+            "Body":"woof 3"
+
+        }}
     ]},
     {"Path":[
     
-        {"Slide": [
-            {
-                "Title":"K10 Edo"
-            },
-            {
-                "Text":"woof 1"
-            }
-        ]},
+        {"Slide": {
+            "Title":"K10 Edo",
+            "Body":"woof (hello)"
+
+        }},
+
+        {"Slide": {
+            "Title":"You",
+            "Body":"who killed him?"
+
+        }},
     
-        {"Slide": [
-            {
-                "Title":"You"
-            },
-            {
-                "Text":"hello"
-            }
-        ]},
-    
-        {"Slide": [
-            {
-                "Title":"K10 Edo"
-            },
-            {
-                "Text":"woof 2"
-            }
-        ]}
+        {"Slide": {
+            "Title":"K10 Edo",
+            "Body":"woof (good bye)"
+
+        }}
     ]}
 ]
 }

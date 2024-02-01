@@ -240,6 +240,11 @@ namespace SimpleJSON
             get { return this as JSONClass; }
         }
 
+        public virtual JSONNode NextNode
+        {
+            get { return this[0][0]; }
+        }
+
         #endregion typecasting properties
 
         #region operators

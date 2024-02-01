@@ -4,17 +4,17 @@ using UnityEngine;
 using System;
 
 [Serializable]
-public class SlideObj
-{
+public class Slide{
+
     public string Title;
     public string Body;
     int id;
 
 
     bool isEnd;
-    BranchObj myBranch;
+    Branch myBranch;
 
-    public SlideObj(string myTitle, string myBody)
+    public Slide(string myTitle, string myBody)
     {
         Title = myTitle;
         Body = myBody;

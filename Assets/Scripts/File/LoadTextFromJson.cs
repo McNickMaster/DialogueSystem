@@ -9,7 +9,6 @@ using System.Text.Json.Serialization;
 using System.Collections;
 using System.Collections.Generic;
 using System.Globalization;
-using JsonFx.Json;
 using UnityEditor;
 
 using SimpleJSON;
@@ -21,7 +20,7 @@ public class LoadTextFromJson : MonoBehaviour
 
 
     string[] textPath, textSlide;
-    Path[] myPathList;
+    public Path[] myPathList;
     Slide[] mySlideList;
 
     // Start is called before the first frame update
@@ -39,59 +38,18 @@ public class LoadTextFromJson : MonoBehaviour
 
     public void LoadDialogue()
     {
-        LoadJson_Class(fileName);
+        LoadJson(fileName);
     }
 
-    public void LoadJson_NestedDict(string file)
-    {
-        TextAsset src = AssetDatabase.LoadAssetAtPath("Assets/Dialogue/" + file + ".json", typeof(TextAsset)) as TextAsset;
-
-        var reader = new JsonReader();
-        dynamic output = reader.Read(src.ToString().Trim());
-
-        Dictionary<string, object>[] tempPath = output["Dialogue"];
-
-
-
-        
-        foreach(Dictionary<string, object> dictionary in tempPath)
-        {
-            foreach(KeyValuePair<string, object> obj in dictionary)
-            {
-                Debug.Log(obj.Key + " ||| " + obj.Value);
-
-                
-                Debug.Log(obj.Value.ToDictionary());
-
-
-                
-                
-                //Debug.Log(obj["Path"]);
-                
-                Path newPath;
-                //Debug.Log(obj.Value[0]);
 /*
-                foreach(var obj2 in dict)
-                {
-                    Debug.Log("2 " + obj2.Key + " ||| " + obj2.Value);
-                }
-                */
+    okay so this is great but it only works with convos that are 1 branch
 
-                //Path newPath = new Path();
-                //Slide[] slides;
-                
-                //populate slides here
-
-                //newPath = new Path(slides);
-                
-            }
-
-        }
+    how tf am i gonna find all the branches
 
 
-    }
+*/
 
-    public void LoadJson_Class(string file)
+    public void LoadJson(string file)
     {
         fileName = file;
         
@@ -105,92 +63,47 @@ public class LoadTextFromJson : MonoBehaviour
         JSONNode convo = root["Conversation"];
 
         
-        JSONArray array = root["Conversation"][0][0].AsArray;
-        Debug.Log(array.Count);
+        int pathCount = root["Conversation"].AsArray.Count;
+        int slideCount;
+        //Debug.Log("pathCount: " + pathCount);
 
-        for(int i = 0; i < array.Count; i++)
+        myPathList = new Path[pathCount];
+        List<Slide> tempSlides = new List<Slide>();
+        for(int i = 0; i < pathCount; i++)
         {
-            Debug.Log(root["Conversation"][0][0][i][0][0][0] + " " + root["Conversation"][0][0][i][0][1][0]);
+            
+            tempSlides = new List<Slide>();
+            slideCount = root["Conversation"][i][0].Count;
+            for(int j = 0; j < slideCount; j++)
+            {
+                JSONNode pathNode = root["Conversation"][i][0][j][0];
+                
+                //Debug.Log(root["Conversation"][i][0][j][0]);
+
+                string slideTitle = pathNode[0];
+                string slideBody = pathNode[1];
+
+                Slide tempSlide = new Slide(slideTitle, slideBody);
+
+                tempSlides.Add(tempSlide);
+            }
+
+            myPathList[i] = new Path(tempSlides.ToArray());
         }
-
-
-
         
 
     }
+
+    public void GenerateBranches()
+    {
+
+    }
+
     
-    public void GetTree()
+    public void GenerateTree()
     {
 
     }
 
 
-}
-
-[Serializable]
-[JsonName("Dialogue")]
-public partial class Dialogue
-{
-    public Conversation[] Conversation { get; set; }
-}
-
-[Serializable]
-[JsonName("Conversation")]
-public partial class Conversation
-{
-    public Path[] Path { get; set; }
-}
-
-[Serializable]
-[JsonName("Path")]
-public partial class Path
-{
-    public Slide[] Slide { get; set; }
-}
-
-[Serializable]
-[JsonName("Slide")]
-public partial class Slide
-{
-    public string Title { get; set; }
-    public string Text { get; set; }
-}
-
-
-
-
-public static class ObjectToDictionaryHelper
-{
-    public static IDictionary<string, object> ToDictionary(this object source)
-    {
-        return source.ToDictionary<object>();
-    }
-
-    public static IDictionary<string, T> ToDictionary<T>(this object source)
-    {
-        if (source == null)
-            ThrowExceptionWhenSourceArgumentIsNull();
-
-        var dictionary = new Dictionary<string, T>();
-        foreach (PropertyDescriptor property in TypeDescriptor.GetProperties(source))
-            AddPropertyToDictionary<T>(property, source, dictionary);
-        return dictionary;
-    }
-
-    private static void AddPropertyToDictionary<T>(PropertyDescriptor property, object source, Dictionary<string, T> dictionary)
-    {
-        object value = property.GetValue(source);
-        if (IsOfType<T>(value))
-            dictionary.Add(property.Name, (T)value);
-    }
-
-    private static bool IsOfType<T>(object value)
-    {
-        return value is T;
-    }
-
-    private static void ThrowExceptionWhenSourceArgumentIsNull()
-    {
-        throw new ArgumentNullException("source", "Unable to convert object to a dictionary. The source object is null.");
-    }
 }

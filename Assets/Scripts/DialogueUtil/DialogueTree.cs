@@ -4,8 +4,13 @@ using UnityEngine;
 
 public class DialogueTree
 {
+
     //how do i store this type of data? it cant be in a 2D array no?
-    Path[] paths;
+    Branch[] branches;
+
+    
+
+    
 
 
 
