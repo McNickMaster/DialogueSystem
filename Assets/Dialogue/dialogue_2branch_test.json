@@ -1,0 +1,79 @@
+{"Conversation":[
+    {"Branch":[
+        {"Path":[
+        
+            {"Slide": {
+                "Title":"K9 Edo",
+                "Body":"woof 1"
+
+            }},
+
+            {"Branch":[
+                {"Path":[
+        
+                    {"Slide": {
+                        "Title":"You",
+                        "Body":"Hello"
+        
+                    }},
+                
+                    {"Slide": {
+                        "Title":"K9 Edo",
+                        "Body":"woof 2"
+        
+                    }},
+                
+                    {"Slide": {
+                        "Title":"K9 Edo",
+                        "Body":"woof 3"
+        
+                    }}
+                ]},
+                {"Path":[
+                
+                    {"Slide": {
+                        "Title":"K10 Edo",
+                        "Body":"woof (hello)"
+        
+                    }},
+        
+                    {"Slide": {
+                        "Title":"You",
+                        "Body":"who killed him?"
+        
+                    }},
+                
+                    {"Slide": {
+                        "Title":"K10 Edo",
+                        "Body":"woof (good bye)"
+        
+                    }}
+                    ]
+                }
+            ]}
+        ]},
+        {"Path":[
+        
+            {"Slide": {
+                "Title":"K10 Edo",
+                "Body":"woof (hello)"
+
+            }},
+
+            {"Slide": {
+                "Title":"You",
+                "Body":"how did he die"
+
+            }},
+        
+            {"Slide": {
+                "Title":"K10 Edo",
+                "Body":"woof (good bye)"
+
+            }}
+            ]
+        }
+    ]}
+]
+        
+}

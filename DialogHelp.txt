@@ -1,0 +1,35 @@
+get id string
+digit by digit
+if digit max
+	it becomes max
+
+at end of lines, get whenever a digit incrememented
+	that is where there is a new branch
+	branch is made by looking at where x < maxDigit
+	x is all digits in that place
+
+
+ex. (digits start at 0 btw, 123, first number is 2)
+
+0 <- zero doesnt count
+00
+1
+11
+111
+1111
+112
+1121
+2
+21
+211
+22
+222
+
+branches are:
+	(1,2) //zero doesnt count lol
+	(111,112)
+	(21,22)
+because for depth 0 in branch 0, the 0th digit incremented (twice!) so there is a branch at everything in the 0th place
+	for depth 1 in branch 1, the digits did not increment in the 1 branch in the first place (11,111,1111,112,1121)
+	for depth 2 in branch 1, the 2nd digit incremented, so there is a branch at everything in the 2nd place 
+	for depth 

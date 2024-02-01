@@ -23,6 +23,8 @@ public class LoadTextFromJson : MonoBehaviour
     public Path[] myPathList;
     Slide[] mySlideList;
 
+    Branch[] branches;
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -60,10 +62,19 @@ public class LoadTextFromJson : MonoBehaviour
 
         JSONNode root = JSON.Parse(json);
 
-        JSONNode convo = root["Conversation"];
+        GeneratePaths(root);
+
+        Debug.Log(root);
+        
+
+    }
+
+    public void GeneratePaths(JSONNode root)
+    {
+        JSONNode branch = root["Branch"];
 
         
-        int pathCount = root["Conversation"].AsArray.Count;
+        int pathCount = branch.AsArray.Count;
         int slideCount;
         //Debug.Log("pathCount: " + pathCount);
 
@@ -73,10 +84,10 @@ public class LoadTextFromJson : MonoBehaviour
         {
             
             tempSlides = new List<Slide>();
-            slideCount = root["Conversation"][i][0].Count;
+            slideCount = branch[i][0].Count;
             for(int j = 0; j < slideCount; j++)
             {
-                JSONNode pathNode = root["Conversation"][i][0][j][0];
+                JSONNode pathNode = branch[i][0][j][0];
                 
                 //Debug.Log(root["Conversation"][i][0][j][0]);
 
@@ -90,7 +101,6 @@ public class LoadTextFromJson : MonoBehaviour
 
             myPathList[i] = new Path(tempSlides.ToArray());
         }
-        
 
     }
 
