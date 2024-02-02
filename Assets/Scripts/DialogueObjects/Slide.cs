@@ -8,7 +8,7 @@ public class Slide{
 
     public string Title;
     public string Body;
-    int id;
+    public int ID;
 
 
     bool isEnd;
@@ -18,6 +18,13 @@ public class Slide{
     {
         Title = myTitle;
         Body = myBody;
+    }
+
+    public Slide(string myTitle, string myBody, int myID)
+    {
+        Title = myTitle;
+        Body = myBody;
+        ID = myID;
     }
 
 }

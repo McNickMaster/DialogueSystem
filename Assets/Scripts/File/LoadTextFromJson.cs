@@ -58,7 +58,7 @@ public class LoadTextFromJson : MonoBehaviour
 
         GeneratePaths(root);
 
-        Debug.Log(root);
+
         
 
     }

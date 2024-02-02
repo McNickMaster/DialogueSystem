@@ -14,7 +14,7 @@ public class Path
     public Path(Slide[] slides)
     {
         this.slides = slides;
-        endSlide = slides[slides.Length-1];
+//        endSlide = slides[slides.Length-1];
     }
     
 
