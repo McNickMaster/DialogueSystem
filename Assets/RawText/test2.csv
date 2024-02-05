@@ -4,8 +4,6 @@ ID,TITLE,BODY
 11,Edo,*Edo barks*
 111,You,You: “C’mere boy!”
 1111,Edo,"*Edo stares at you till you walk over. You see what he’s found, tiny gray flecks on the ground. Scales… or maybe feathers, hard to tell* [end]"
-11111,Edo,"*Edo stares at you till you walk over. You see what he’s found, tiny gray flecks on the ground. Scales… or maybe feathers, hard to tell* [end]"
-112,You,You: *Walk over*
 1121,You,"*You walk over to see what he’s found. Tiny gray flecks on the ground. Scales… or maybe feathers, hard to tell*"
 11211,You,You: *Pet the dog*
 112111,Edo,*Edo’s tail wags* [end]

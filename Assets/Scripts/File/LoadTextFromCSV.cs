@@ -8,46 +8,36 @@ public class LoadTextFromCSV : MonoBehaviour
 {
     public string fileName;
     
-
+    [HideInInspector]
     public List<Line> data = new List<Line>();
    // public List<List<KeyValuePair<int,int>>> branchIDGroups =  new List<List<KeyValuePair<int,int>>>();
 
     List<List<KeyValuePair<int,int>>> tree;
 
+    
+    [HideInInspector]
     public List<Slide> slides = new List<Slide>();
+    public List<Conversation> conversations = new List<Conversation>();
+    [HideInInspector]
+    public List<Branch> branches = new List<Branch>();
+    [HideInInspector]
     public Path path;
+
+
+    int numberConvos = -999;
 
 
     // Start is called before the first frame update
     void Awake()
     {
-        LoadCSV();
-        CreateObjectsFromCSV();
+        //LoadCSV();
+        
     }
 
     // Update is called once per frame
     void Update()
     {
         
-    }
-
-    void CreateObjectsFromCSV()
-    {
-
-        List<Branch> branches = new List<Branch>();
-        foreach(List<KeyValuePair<int,int>> list in tree)
-        {   
-            for(int i = 0; i < list.Count; i++)
-            {
-   //             branches.Add(new Branch());
-                
-
-                //Debug.Log("      " + list[i].Value + " " + list[i].Key);
-            }
-  
-        }
-
-
     }
 
 
@@ -67,12 +57,11 @@ public class LoadTextFromCSV : MonoBehaviour
         //Debug.Log(data[i].ID + " " + data[i].TITLE + " " + data[i].BODY);
 
       
-
-        tree = FindAllBranches();
+        
         slides = GetAllSlides();
+        tree = FindAllBranches();
+        conversations = CreateConversationObjects();
 
-        Debug.Log("tree value " + tree[1][0].Value);
-        path = GetRestOfPath(slides.Find(x => x.ID == tree[1][0].Value));
         
         /*
         Debug.Log("lists in tree: ");
@@ -89,15 +78,82 @@ public class LoadTextFromCSV : MonoBehaviour
             Debug.Log("end list");    
         }
         Debug.Log("end tree");
-        */
+*/       
+
+        Debug.Log("start branches");  
+        foreach(Branch branch in branches)
+        {
+            Debug.Log("start paths");  
+            foreach(Path path in branch.myPathOptions)
+            {
+                Debug.Log("start slides");
+                foreach(Slide slide in path.slides)
+                {
+                    Debug.Log("     " + slide.ID + " " + slide.Body);
+                }
+                Debug.Log("end slides");
+            }
+            Debug.Log("end paths");
+        }
+        Debug.Log("end branches");
 
         //Debug.Log("size of tree: " + tree.Count);
 
 
 
-        
 
         
+
+
+    }
+    
+    List<Conversation> CreateConversationObjects()
+    {
+        List<Conversation> tempConvos = new List<Conversation>();
+
+        string convertedID;
+        for(int i = 0; i < numberConvos; i++)
+        {
+            convertedID = (Convert.ToChar(i+65)).ToString();
+            Conversation convo = new Conversation(convertedID, CreateBranchObjects(convertedID));
+            tempConvos.Add(convo);
+        }
+
+        return tempConvos;
+        
+    }
+
+
+    List<Branch> CreateBranchObjects(string convoID)
+    {
+
+        List<Branch> tempBranches = new List<Branch>();
+        foreach(List<KeyValuePair<int,int>> list in tree)
+        {   
+            Path[] pathChoices = new Path[list.Count];
+            for(int i = 0; i < list.Count; i++)
+            {
+                //if it could find a slide with matching id and 
+                Slide slide = slides.Find(x => ((x.ID) == list[i].Value.ToString()) && (x.ConvoID == convoID));
+                if(slide != null)
+                {
+                    pathChoices[i] = GetRestOfPath(slide);
+                }
+                
+                //list[i].Value + " " + list[i].Key
+
+                //Debug.Log("      " + list[i].Value + " " + list[i].Key);
+            }
+        
+            
+            tempBranches.Add(new Branch(pathChoices));
+  
+        }
+
+        
+
+
+        return tempBranches;
 
 
     }
@@ -110,7 +166,7 @@ public class LoadTextFromCSV : MonoBehaviour
 
         for(int j = 0; j < data.Count; j++)
         {
-            int id = Int32.Parse(data[j].ID);
+            string id = data[j].ID;
 
             if(id == firstSlideInPath.ID)
             {
@@ -127,22 +183,32 @@ public class LoadTextFromCSV : MonoBehaviour
             string id = data[j].ID;
             string startID = ""+firstSlideInPath.ID;
 
-            Debug.Log(startID + " = " + id);
-            Debug.Log("     " + id.StartsWith(startID));
+//            Debug.Log(startID + " = " + id);
+//           Debug.Log("     " + id.StartsWith(startID));
             bool flag = true;
 
-            
-            for(int i = startID.Length-1; i < id.Length; i++)
+            //int x;
+            for(int i = startID.Length; i < id.Length; i++)
             {
-            
+                
+                
                 if(id[i] == '1')
                 {
 
                 } else {
-                    flag = false;
-
+                    flag = false;                                   
                 }
 
+                string idPlusOne = (id.Substring(0,i) + (Int32.Parse(id[i].ToString())+1).ToString() + id.Substring(i+1, id.Length-i-1));
+                string idMinusOne = (id.Substring(0,i) + (Int32.Parse(id[i].ToString())-1).ToString() + id.Substring(i+1, id.Length-i-1));
+                if(null != slides.Find(x => x.ID + "" == idPlusOne) || null != slides.Find(x => x.ID + "" == idMinusOne))
+                {
+//                    Debug.Log("found branch neighbor in slides");
+                    flag = false;
+
+                    return new Path(tempSlides.ToArray());
+                }
+            
             }   
 
             flag = flag && id.StartsWith(startID);
@@ -151,7 +217,7 @@ public class LoadTextFromCSV : MonoBehaviour
             if(flag)
             {
                 Line tempLine = data.Find(x => x.ID == id);
-                tempSlides.Add(new Slide(tempLine.TITLE, tempLine.BODY, Int32.Parse(tempLine.ID)));
+                tempSlides.Add(new Slide(tempLine.TITLE, tempLine.BODY, tempLine.ID));
             }
 
 
@@ -248,15 +314,22 @@ public class LoadTextFromCSV : MonoBehaviour
     List<Slide> GetAllSlides()
     {
         List<Slide> allSlides = new List<Slide>();
-
+        List<string> convoIDs =new List<string>();
         for(int j = 0; j < data.Count; j++)
         {
-            Slide temp = new Slide(data[j].TITLE, data[j].BODY, Int32.Parse(data[j].ID));
+            Slide temp = new Slide(data[j].TITLE, data[j].BODY, data[j].ID, data[j].ConvoID);
             if(!allSlides.Contains(temp))
             {
                 allSlides.Add(temp);
             }
+
+            if(!convoIDs.Contains(data[j].ConvoID))
+            {
+                convoIDs.Add(data[j].ConvoID);
+            }
         }
+
+        numberConvos = convoIDs.Count;
 
 
 
@@ -301,7 +374,15 @@ public class LoadTextFromCSV : MonoBehaviour
 
 
 
-    
+    public List<Branch> GetBranches()
+    {
+        return branches;
+    }
+
+    public List<Conversation> GetConversations()
+    {
+        return conversations;
+    }
 
 
 }
@@ -314,6 +395,7 @@ public class LoadTextFromCSV : MonoBehaviour
 public class Line
 {
     public string ID;
+    public string ConvoID;
     public string TITLE;
     public string BODY;
 

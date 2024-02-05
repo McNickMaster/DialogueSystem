@@ -1,0 +1,43 @@
+ID,ConvoID,TITLE,BODY
+0,A,Edo,"*Edo diligently searches the scene, and despite being bothered by the truck’s blinding headlights, sniffs out something*"
+1,A,You,“Whatcha got there?”
+11,A,Edo,*Edo barks*
+111,A,You,“C’mere boy!”
+1111,A,Edo,"*Edo stares at you till you walk over. You see what he’s found, tiny gray flecks on the ground. Scales… or maybe feathers, hard to tell* [end]"
+112,A,You,*Walk over*
+1121,A,You,"*You walk over to see what he’s found. Tiny gray flecks on the ground. Scales… or maybe feathers, hard to tell*"
+11211,A,You,*Pet the dog*
+112111,A,Edo,*Edo’s tail wags* [end]
+11212,A,You,*Walk back* [end]
+2,A,You,*Walk over*
+21,A,You,"*You walk over to see what he’s found. Tiny gray flecks on the ground. Scales… or maybe feathers, hard to tell*"
+211,A,You,*Pet the dog*
+2111,A,Edo,*Edo’s tail wags* [end]
+212,A,You,*Walk back* [end]
+3,A,You,*Wait*
+31,A,Tech,"*One of the technicians walks over to Edo, and bags up something from the ground. They walk over and hand it to you*"
+311,A,You,“Thanks”
+3111,A,Tech,"“No prob.” *Inside the bag, some small gray flecks. Looks like scales maybe… or feathers?* [end]"
+312,A,You,*Wordlessly accept it*
+3121,A,You,"*Looking inside the bag, you notice some small gray flecks. Looks like scales of some sort, or maybe feathers* [end]"
+0,B,Edo,"*Edo diligently searches the scene, and despite being bothered by the truck’s blinding headlights, sniffs out something*"
+1,B,You,“Whatcha got there?”
+11,B,Edo,*Edo barks*
+111,B,You,“C’mere boy!”
+1111,B,Edo,"*Edo stares at you till you walk over. You see what he’s found, tiny gray flecks on the ground. Scales… or maybe feathers, hard to tell* [end]"
+112,B,You,*Walk over*
+1121,B,You,"*You walk over to see what he’s found. Tiny gray flecks on the ground. Scales… or maybe feathers, hard to tell*"
+11211,B,You,*Pet the dog*
+112111,B,Edo,*Edo’s tail wags* [end]
+11212,B,You,*Walk back* [end]
+2,B,You,*Walk over*
+21,B,You,"*You walk over to see what he’s found. Tiny gray flecks on the ground. Scales… or maybe feathers, hard to tell*"
+211,B,You,*Pet the dog*
+2111,B,Edo,*Edo’s tail wags* [end]
+212,B,You,*Walk back* [end]
+3,B,You,*Wait*
+31,B,Tech,"*One of the technicians walks over to Edo, and bags up something from the ground. They walk over and hand it to you*"
+311,B,You,“Thanks”
+3111,B,Tech,"“No prob.” *Inside the bag, some small gray flecks. Looks like scales maybe… or feathers?* [end]"
+312,B,You,*Wordlessly accept it*
+3121,B,You,"*Looking inside the bag, you notice some small gray flecks. Looks like scales of some sort, or maybe feathers* [end]"

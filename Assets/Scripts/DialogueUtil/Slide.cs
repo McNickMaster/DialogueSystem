@@ -8,7 +8,8 @@ public class Slide{
 
     public string Title;
     public string Body;
-    public int ID;
+    public string ID;
+    public string ConvoID;
 
 
     bool isEnd;
@@ -20,11 +21,19 @@ public class Slide{
         Body = myBody;
     }
 
-    public Slide(string myTitle, string myBody, int myID)
+    public Slide(string myTitle, string myBody, string myID)
     {
         Title = myTitle;
         Body = myBody;
         ID = myID;
+    }
+
+    public Slide(string myTitle, string myBody, string myID, string ConvoID)
+    {
+        Title = myTitle;
+        Body = myBody;
+        ID = myID;
+        this.ConvoID = ConvoID;
     }
 
 }
