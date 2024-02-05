@@ -11,7 +11,7 @@ public class Path
     public Branch myBranch;
 
     public bool isEnd = true;
-    public Branch endBranch; 
+    public Branch endBranch; //branch to go if !isEnd and when path ends
 
 
     public Path(Slide[] slides)
