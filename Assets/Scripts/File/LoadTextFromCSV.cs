@@ -35,7 +35,7 @@ public class LoadTextFromCSV : MonoBehaviour
         
         //Sinbad.CsvUtil.SaveObjects<Line>();
 
-        StreamReader sr = new StreamReader("Assets/RawText/test3.csv");
+        StreamReader sr = new StreamReader("Assets/RawText/"+fileName+".csv");
         string bigInput = sr.ReadToEnd();
 
         string[] splits = bigInput.Split("@");
@@ -47,7 +47,7 @@ public class LoadTextFromCSV : MonoBehaviour
                 output = splits[i];
                 if(i > 0)
                 {
-                    output = "ID,ConvoID,TITLE,BODY\n" + output;
+                    output = "ID,TITLE,BODY\n" + output;
                 }
                 outputFile.Write(output);
             }
@@ -365,7 +365,7 @@ public class LoadTextFromCSV : MonoBehaviour
                     pathsFoundInThisBranch++;
                     if(Int32.Parse(id) == 0)
                     {
-
+                        Debug.Log("zero found");
                     } else 
                     {
                         KeyValuePair<int, int> pair = new KeyValuePair<int, int>(j, Int32.Parse(id));
@@ -390,22 +390,16 @@ public class LoadTextFromCSV : MonoBehaviour
     List<Slide> GetAllSlides()
     {
         List<Slide> allSlides = new List<Slide>();
-        List<string> convoIDs =new List<string>();
         for(int j = 0; j < data.Count; j++)
         {
-            Slide temp = new Slide(data[j].TITLE, data[j].BODY, data[j].ID, data[j].ConvoID);
+            Slide temp = new Slide(data[j].TITLE, data[j].BODY, data[j].ID);
             if(!allSlides.Contains(temp))
             {
                 allSlides.Add(temp);
             }
 
-            if(!convoIDs.Contains(data[j].ConvoID))
-            {
-                convoIDs.Add(data[j].ConvoID);
-            }
         }
 
-        numberConvos = convoIDs.Count;
 
 
 
@@ -455,6 +449,12 @@ public class LoadTextFromCSV : MonoBehaviour
         return branches;
     }
 
+    public Slide GetFirstSlide()
+    {
+        Debug.Log("first slide: " + data[0].BODY);
+        return new Slide(data[0].TITLE, data[0].BODY, data[0].ID);
+    }
+
 
 
 }
@@ -467,7 +467,6 @@ public class LoadTextFromCSV : MonoBehaviour
 public class Line
 {
     public string ID;
-    public string ConvoID;
     public string TITLE;
     public string BODY;
 

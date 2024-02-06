@@ -20,7 +20,8 @@ ID,ConvoID,TITLE,BODY
 3111,A,Tech,"“No prob.” *Inside the bag, some small gray flecks. Looks like scales maybe… or feathers?* [end]"
 312,A,You,You: *Wordlessly accept it*
 3121,A,You,"*Looking inside the bag, you notice some small gray flecks. Looks like scales of some sort, or maybe feathers* [end]"
-@1,B,You,"You: “I do mind, so you better get out of my face”"
+@0,B,Eric,"Hey Detective, don’t mind me"
+1,B,You,"You: “I do mind, so you better get out of my face”"
 11,B,You,"“Duly noted, I’ll be outta here soon” [end]"
 2,B,Edo,You: “I’m glad to see you”
 21,B,You,“Happy to hear it. What’s up?”

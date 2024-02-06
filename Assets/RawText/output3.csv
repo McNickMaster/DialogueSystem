@@ -1,0 +1,48 @@
+ID,TITLE,BODY
+0,Eric Meng,"“Good afternoon, Detective”"
+1,You,“What’s up?”
+11,Eric Meng,"“Just doin’ my job, you just come by to chat?”"
+111,You,"""Yep, not too worried about this case”"
+1111,Eric Meng,"“That’s either a great sign, or a terrible one” [end]"
+112,You,"“Nah, just got some questions for you”"
+1121,Eric Meng,“I see.”
+11211,You,“What do you make of this?”
+112111,Eric Meng,"“I dunno, looks like some washed up wreck, definitely got attacked out there, but who knows why” [back1121]"
+11212,You,“This doesn’t happen often does it?”
+112121,Eric Meng,"“No it does not, and good thing too, given a lot of ours dependence on the water” [back1121] [unlock11215]"
+11213,You,“Do you know anything about this victim?”
+112131,Eric Meng,"“All I see is a hand, so I don’t know how I’d recognize them.” [back1121] [unlock11216]"
+11214,You,“I think that’s everything” [end]
+11215,You,[locked] “Why isn’t this more common?”
+112151,Eric Meng,"“Most creatures in the sea aren’t that aggressive, especially towards big ships with barely any meat on them. This couldn’t have been a random attack.” [back1121]"
+11216,You,"[locked] “Must’ve been a fisher though, right?”"
+112161,Eric Meng,"“This is a fishing ship, but I don’t see the typical equipment. Plenty of fishermen have odd jobs around here, maybe they were on an errand.” [back1121]"
+2,You,"“Good afternoon, just got a few questions.”"
+21,Eric Meng,"“Sure thing, ask away”"
+211,You,“Notice anything off?”
+2111,Eric Meng,“The only thing off is this whole ordeal.”
+21111,Eric Meng,"“These sorts of attacks almost never happen, Abra’s sea creatures don’t bother us lest we bother them.” [back21] [unlock215]"
+212,You,“Know anything about the victim?”
+2121,Eric Meng,"“It’s just a hand, so– no. The most I can surmise is they were a fisher.” [back21]"
+213,You,“Know anything about the ship?”
+2131,Eric Meng,"“Seems like a standard gillnetter, fishing ship, though they could’ve been using it for anything. A lot of sailors in Oldport have side-gigs.” [back21]"
+214,You,"“Thanks for your help, that’s all” [end]"
+215,You,[locked] “What could the victim have done to provoke something?”
+2151,Eric Meng,"“Besides attacking them? I got no clue, unless the captain was a fool, they would’ve known not to harass anything.” [back21]"
+3,You,“You got a minute?”
+31,Eric Meng,"“Just one, why?”"
+311,You,“I’ll make it quick then”
+3111,Eric Meng,“Better get to your point” [back31]
+312,You,“What’ve you put together so far?”
+3121,Eric Meng,"“Not much, the ship was obviously attacked, but by what? Oldport’s sailors know better than to provoke any sea creatures.” [back31] [unlock316]"
+313,You,“Have you seen this happen before?”
+3131,Eric Meng,"“A wreck like this? Almost never happens, good thing too, given the town’s dependence on the water.” [back31]"
+314,You,“Know anything about the ship or crew?”
+3141,Eric Meng,"“Typical gillnetter like this would just have one or two people manning it, given that there’s just the one hand and no other signs, I’m assuming just one sailor.” [back31] [unlock317]"
+315,You,"“My minute’s up, that’s everything.” [end]"
+316,You,[locked] “What would provoke something?”
+3161,Eric Meng,"“Oh I dunno, attacking it I guess? Staying too long in its territory maybe?” [back31]"
+317,You,"[locked] “Gillnetter, that a fishing vessel?”"
+3171,Eric Meng,"“Most often, though so many sailors around here have odd jobs, who knows what they were up to” [back31]"
+4,You,“Not so good now that you’re here.”
+41,Eric Meng,"“Y’know, I don’t know what your problem with me is” [end]"

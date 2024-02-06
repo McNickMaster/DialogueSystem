@@ -75,8 +75,13 @@ public class DialogueLoader : MonoBehaviour
 
     public void StartConversation()
     {
-        
-        SpawnBranch(myBranches[0]);
+        Path initPath = new Path(new Slide[]{csvLoader.GetFirstSlide()});
+        currentPath = initPath;
+        initPath.firstSlide.Body = initPath.endSlide.Body + "[back]";
+        initPath.DetectPathEnd();
+
+        SpawnSlide(initPath.firstSlide);
+        //SpawnBranch(myBranches[0]);
         
     }
 
@@ -96,19 +101,25 @@ public class DialogueLoader : MonoBehaviour
     {
         Destroy(currentUIObject);
 
+        pathIndex++;
         if(pathIndex <= currentPath.slides.Length-1)
         {
             SpawnSlide(currentPath.slides[pathIndex]);
+            
             Debug.Log("path: " + pathIndex + "/" + currentPath.slides.Length);
-            pathIndex++;
         } else 
         {
 
-            Path unlockPath = FindPath(currentPath.unlockPathID); 
-            if(unlockPath != null)
+            if(currentBranch != null)
             {
-                Debug.Log("unlocking...");
-                unlockPath.locked = false;
+
+                Path unlockPath = FindPath(currentPath.unlockPathID); 
+                if(unlockPath != null)
+                {
+                    Debug.Log("unlocking...");
+                    unlockPath.locked = false;
+                }
+
             }
             
             Debug.Log("reached end of path: " + currentPath.pathEndBehaviour);
@@ -116,6 +127,7 @@ public class DialogueLoader : MonoBehaviour
             {
                 case PathEndBehaviour.GOTO:
                 {
+                    Debug.Log("trying to spawn new branch with id: " + currentPath.gotoID);
                     SpawnBranch(FindBranch(currentPath.gotoID));
                     break;
                 }
@@ -128,7 +140,8 @@ public class DialogueLoader : MonoBehaviour
                 
                 case PathEndBehaviour.CONTINUE:
                 {
-                    SpawnBranch(currentPath.endBranch);
+                    Debug.Log("trying to continue new branch with id: " + currentPath.gotoID);
+                    SpawnBranch(FindBranch(currentPath.gotoID));
                     break;
                 }
             }
@@ -151,7 +164,7 @@ public class DialogueLoader : MonoBehaviour
         {
             //Slide temp = csvLoader.slides[1 + csvLoader.slides.FindIndex(x => x.ID == p.endSlide.ID)];
             Slide temp = csvLoader.slides[1 + csvLoader.slides.FindIndex(x => x.ID == p.endSlide.ID)];
-            Debug.Log(temp.Body + " " + p.endSlide.ID + " " + (1 + csvLoader.slides.FindIndex(x => x.ID == p.endSlide.ID)));
+            //Debug.Log(temp.Body + " " + p.endSlide.ID + " " + (1 + csvLoader.slides.FindIndex(x => x.ID == p.endSlide.ID)));
 
             p.endBranch = FindBranch(temp.ID);
 
@@ -174,7 +187,7 @@ public class DialogueLoader : MonoBehaviour
         
     }
 
-    void SpawnBranch(Branch b)
+    BranchObject SpawnBranch(Branch b)
     {
         Destroy(currentUIObject);
         pathIndex = 0;
@@ -190,6 +203,8 @@ public class DialogueLoader : MonoBehaviour
         }
         currentBranch = spawnBranch.branch;
         spawnBranch.PopulateTexts();
+
+        return spawnBranch;
     }
 
     void RespawnBranch()

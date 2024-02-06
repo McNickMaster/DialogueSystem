@@ -15,7 +15,7 @@ public class Path
     public Branch endBranch;
 
     public bool locked = false;
-    public string unlockPathID;
+    public string unlockPathID = "";
     
 
 
@@ -28,8 +28,9 @@ public class Path
         DetectPathEnd();
     }
 
-    void DetectPathEnd()
+    public void DetectPathEnd()
     {
+        
         locked = firstSlide.Body.Contains("[locked]");
         if(locked)
         {
@@ -50,16 +51,17 @@ public class Path
 
             int index = endSlide.Body.IndexOf("[end]");
             endSlide.Body = endSlide.Body.Substring(0, index-1);
-        } else if(endSlide.Body.Contains("[goto"))
+        } else if(endSlide.Body.Contains("[back"))
         {
             pathEndBehaviour = PathEndBehaviour.GOTO;
             //whole section     Debug.Log(endSlide.Body.Substring(endSlide.Body.IndexOf("[back"), endSlide.Body.Length - endSlide.Body.IndexOf("[back")));
-            int index = endSlide.Body.IndexOf("[goto")+5;
+            int index = endSlide.Body.IndexOf("[back")+5;
             gotoID = endSlide.Body.Substring(index, endSlide.Body.Length - index - 1) + "1";
             Debug.Log("gotoID: " + gotoID);
-            endSlide.Body = endSlide.Body.Substring(0, index - 2 - gotoID.Length);
+            endSlide.Body = endSlide.Body.Substring(0, endSlide.Body.Length - gotoID.Length - 5);
         } else 
         {
+            gotoID = endSlide.ID + "1";
             pathEndBehaviour = PathEndBehaviour.CONTINUE;
         }
 
