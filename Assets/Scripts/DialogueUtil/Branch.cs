@@ -5,6 +5,7 @@ using UnityEngine;
 [System.Serializable]
 public class Branch
 {
+    [HideInInspector]
     public Branch parentBranch;
     public List<Path> myPathOptions;
 
@@ -12,10 +13,13 @@ public class Branch
     {
         myPathOptions = new List<Path>(pathOptions);
 
+
+/*
         foreach(Path p in myPathOptions)
         {
-            p.myBranch = this;
+            //p.myBranch = this;
         }
+        */
     }
 
     public Slide[] GetFirstSlidesOfPath()

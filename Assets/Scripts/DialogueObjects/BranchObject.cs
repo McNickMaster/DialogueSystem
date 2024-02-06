@@ -20,31 +20,45 @@ public class BranchObject : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(Input.GetKeyDown(KeyCode.F))
+        {
+            PopulateTexts();
+        }
     }
 
     public void PopulateTexts()
     {
         titleText.text = "You";
 
+        
+
 // this is broken and clips out some options sometimes
-        for(int i = options.Length - 1; i < branch.myPathOptions.Count; i++)
+        //Debug.Log("Option length: " + options.Length + " Branch path count: " + branch.myPathOptions.Count);
+        for(int i = options.Length; i > branch.myPathOptions.Count; i--)
         {
-            options[i].gameObject.transform.parent.gameObject.SetActive(false);
+            options[i-1].transform.parent.gameObject.SetActive(false);
         }
     
-
+        //Debug.Log("Option length: " + options.Length + " Branch path count: " + branch.myPathOptions.Count);
         for(int i = 0; i < branch.myPathOptions.Count; i++)
         {
+            options[i].transform.parent.gameObject.SetActive(!branch.myPathOptions[i].locked);
             options[i].text = branch.myPathOptions[i].firstSlide.Body;
         }
 
-        closeButton.onClick.AddListener(DialogueLoader.instance.StartConversation);
+        closeButton.onClick.AddListener(DialogueLoader.instance.EndConversation);
         
     }
 
     public void ChoosePath(int i)
     {
-        DialogueLoader.instance.LoadPath(branch.myPathOptions[i]);
+        if(i >= branch.myPathOptions.Count)
+        {
+            Debug.Log("button index " + i + "out of bounds of path options array: " + branch.myPathOptions.Count);
+        } else 
+        {
+            DialogueLoader.instance.LoadPath(branch.myPathOptions[i]);
+        }
+        
     }
 }

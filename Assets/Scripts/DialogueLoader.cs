@@ -13,15 +13,16 @@ public class DialogueLoader : MonoBehaviour
     public GameObject textAsset;
     LoadTextFromCSV csvLoader;
 
+    public string fileToLoad = "";
     public string convoIDToLoad = "";
 
-    Conversation conversation;
+    public List<Branch> myBranches = new List<Branch>();
 
     public Transform dialogueParent;
     public GameObject slidePrefab, branchPrefab;
 
     private GameObject currentUIObject;
-    private Path currentPath;
+    public Path currentPath;
     private Branch currentBranch;
     private int pathIndex;
 
@@ -31,15 +32,16 @@ public class DialogueLoader : MonoBehaviour
 
 
         csvLoader = GetComponent<LoadTextFromCSV>();
-        csvLoader.LoadCSV();
+        csvLoader.LoadCSV(fileToLoad);
+
+        myBranches = csvLoader.GetBranches();
 
         //LoadDialogueBranch("1");
-        conversation = LoadConversation(convoIDToLoad); 
 
 
         //SpawnSlide(new Slide("ME", "HI HYD"));
 
-        StartConversation();
+        //StartConversation();
         //Debug.Log(conversation.myBranches[0].GetFirstSlidesOfPath()[0].Body);
     }
 
@@ -74,13 +76,19 @@ public class DialogueLoader : MonoBehaviour
     public void StartConversation()
     {
         
-        SpawnBranch(conversation.myBranches[0]);
+        SpawnBranch(myBranches[0]);
         
     }
 
     void StartConversation(string id)
     {
-        SpawnBranch(LoadConversation(id).myBranches[0]);
+        SpawnBranch(myBranches[0]);
+    }
+
+    public void EndConversation()
+    {
+        Destroy(currentUIObject);
+        currentUIObject = null;
     }
 
 
@@ -91,29 +99,63 @@ public class DialogueLoader : MonoBehaviour
         if(pathIndex <= currentPath.slides.Length-1)
         {
             SpawnSlide(currentPath.slides[pathIndex]);
+            Debug.Log("path: " + pathIndex + "/" + currentPath.slides.Length);
             pathIndex++;
         } else 
         {
-            if(currentPath.isEnd)
-            {
-                //StartConversation() // resets all conversations back to the beggining
-                RespawnBranch(); // resets no conversations back to the beggining
 
-
-            } else 
+            Path unlockPath = FindPath(currentPath.unlockPathID); 
+            if(unlockPath != null)
             {
-                SpawnBranch(currentPath.endBranch);
+                Debug.Log("unlocking...");
+                unlockPath.locked = false;
+            }
+            
+            Debug.Log("reached end of path: " + currentPath.pathEndBehaviour);
+            switch(currentPath.pathEndBehaviour)
+            {
+                case PathEndBehaviour.GOTO:
+                {
+                    SpawnBranch(FindBranch(currentPath.gotoID));
+                    break;
+                }
+                
+                case PathEndBehaviour.END:
+                {
+                    EndConversation();
+                    break;
+                }
+                
+                case PathEndBehaviour.CONTINUE:
+                {
+                    SpawnBranch(currentPath.endBranch);
+                    break;
+                }
             }
 
+
+
         }
+
+
+
+
+
     }
 
     public void LoadPath(Path p)
     {
         p.myBranch = currentBranch;
 
-        Slide temp = csvLoader.slides[1 + csvLoader.slides.FindIndex(x => x.ID == p.endSlide.ID)];
-        p.endBranch = conversation.myBranches.Find(x => x.myPathOptions[0].firstSlide.ID == temp.ID);
+        if(p.pathEndBehaviour.Equals(PathEndBehaviour.CONTINUE))
+        {
+            //Slide temp = csvLoader.slides[1 + csvLoader.slides.FindIndex(x => x.ID == p.endSlide.ID)];
+            Slide temp = csvLoader.slides[1 + csvLoader.slides.FindIndex(x => x.ID == p.endSlide.ID)];
+            Debug.Log(temp.Body + " " + p.endSlide.ID + " " + (1 + csvLoader.slides.FindIndex(x => x.ID == p.endSlide.ID)));
+
+            p.endBranch = FindBranch(temp.ID);
+
+        }
         currentPath = p;
         pathIndex = 0;
         LoadNextInPath();
@@ -161,12 +203,33 @@ public class DialogueLoader : MonoBehaviour
         spawnBranch.PopulateTexts();
     }
 
-
-
-    public Conversation LoadConversation(string convoID)
+    Branch FindBranch(string id)
     {
-        return csvLoader.conversations.Find(c => c.ID == convoID);
+        Branch b = myBranches.Find(x => x.myPathOptions[0].firstSlide.ID == id);
+        Debug.Log("is branch found: " + b != null);
+        return b;
+
     }
+
+    Path FindPath(string id)
+    {
+
+        Debug.Log("looking for path with firstSlide id: " + id);
+        Path p = null;
+
+            
+        p = currentBranch.myPathOptions.Find(p => p.firstSlide.ID == id);
+    
+        
+
+
+
+
+        return p;
+    }
+
+
+
 
 
 
