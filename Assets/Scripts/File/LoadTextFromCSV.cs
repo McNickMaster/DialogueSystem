@@ -101,7 +101,7 @@ public class LoadTextFromCSV : MonoBehaviour
             Debug.Log("end list");    
         }
         Debug.Log("end tree");
-*/       
+ */    
 
         
         Debug.Log("start branches");  
@@ -125,9 +125,26 @@ public class LoadTextFromCSV : MonoBehaviour
             Debug.Log("end paths");
         }
         Debug.Log("end branches");
-
+  
         //Debug.Log("size of tree: " + tree.Count);
 
+/*
+        Debug.Log("start branches");  
+        foreach(Branch branch in branches)
+        {
+            Debug.Log("start paths");  
+            foreach(Path path in branch.myPathOptions)
+            {
+                if(path != null)
+                {
+                    Debug.Log("     " + path.firstSlide.ID + " " + path.firstSlide.Body);
+
+                }
+            }
+            Debug.Log("end paths");
+        }
+        Debug.Log("end branches");
+ */ 
 
 
 
@@ -166,6 +183,7 @@ public class LoadTextFromCSV : MonoBehaviour
             for(int i = 0; i < list.Count; i++)
             {
                 //if it could find a slide with matching id and 
+                //Debug.Log("list value: " + list[i].Value.ToString());
                 Slide slide = slides.Find(x => ((x.ID) == list[i].Value.ToString()));// && (x.ConvoID == convoID));
                 if(slide != null)
                 {
@@ -303,17 +321,38 @@ public class LoadTextFromCSV : MonoBehaviour
         return new Path(tempSlides.ToArray());
     }
 
+/*
+okay so this function is just incorrect. it does not look at the rest of the string when comparing digits. we need it to FindBranchAt the location, but also checks
+    that the new branch has members of the same number stem, i.e. (111, 112, 133) have the same stem of 11.
+    it also needs to loop through a couple times, remembering which stems are complete/which ones havent been done yet.
+
+    idk the best way to do this. it ignores 316 when looking at the 3rd correctly with the substring method i have here, but it does not loop back around to 
+    put 316 in the branch it belongs
+
+
+
+*/
     public List<List<KeyValuePair<int,int>>> FindAllBranches()
     {
         tree = new List<List<KeyValuePair<int,int>>>();
-        List<KeyValuePair<int,int>> root = FindBranchAt(0,0);
+        List<KeyValuePair<int,int>> root = FindBranchAt(0,0,"");
         tree.Add(root);
         List<KeyValuePair<int,int>> temp = new List<KeyValuePair<int,int>>();
+        
         for(int j = 0; j < 6; j++)
         {
             for(int i = 0; i < root.Count; i++)
             {
-                temp = FindBranchAt(j, root[i].Key);
+                string s = "";
+                if(tree.Count > 1)
+                {
+                    s=root[i]+"";
+                } else 
+                {
+                    s=root[0].Value + "";
+                }
+                temp = FindBranchAt(j, root[i].Key, "" + s);
+                Debug.Log("finding branches: " + root[i].Value + " " + s);
 
                 if(temp == null)
                 {
@@ -322,7 +361,7 @@ public class LoadTextFromCSV : MonoBehaviour
                 {
                     if(tree.Contains(temp) || IsTempElementInTree(tree, temp))
                     {
-                        //Debug.Log("temp was already in tree");
+//                        Debug.Log("temp was already in tree: " + temp[0].Value);
                     } else 
                     {
                         tree.Add(temp);
@@ -333,13 +372,16 @@ public class LoadTextFromCSV : MonoBehaviour
                 
                 
             }
+
         }
+        
+        
         
 
         return tree;
     }
 
-    List<KeyValuePair<int,int>> FindBranchAt(int startDigit, int startLine)
+    List<KeyValuePair<int,int>> FindBranchAt(int startDigit, int startLine, string subString)
     { 
         List<KeyValuePair<int,int>> branch1 = new List<KeyValuePair<int,int>>();
         
@@ -362,6 +404,7 @@ public class LoadTextFromCSV : MonoBehaviour
                 {
                     max = x;
                     pathAtI = startDigit;
+                    //Debug.Log("start digit: " + startDigit + " id: " + id);
                     pathsFoundInThisBranch++;
                     if(Int32.Parse(id) == 0)
                     {
@@ -369,7 +412,20 @@ public class LoadTextFromCSV : MonoBehaviour
                     } else 
                     {
                         KeyValuePair<int, int> pair = new KeyValuePair<int, int>(j, Int32.Parse(id));
-                        branch1.Add(pair);
+                        
+                        bool check = true;
+                        if(GetAllButLastStr(id).Equals(subString))
+                        {
+
+                        } else if(id.Length > 1)
+                        {
+                            check = false;
+                        }
+
+                        if(check)
+                        {
+                          branch1.Add(pair);
+                        }
                     }
                         
 
@@ -392,10 +448,12 @@ public class LoadTextFromCSV : MonoBehaviour
         List<Slide> allSlides = new List<Slide>();
         for(int j = 0; j < data.Count; j++)
         {
+            
             Slide temp = new Slide(data[j].TITLE, data[j].BODY, data[j].ID);
             if(!allSlides.Contains(temp))
             {
                 allSlides.Add(temp);
+                //Debug.Log("data: " + data[j].ID);
             }
 
         }
@@ -415,16 +473,14 @@ public class LoadTextFromCSV : MonoBehaviour
         {
             foreach(List<KeyValuePair<int,int>> list in tree)
             {
+//                Debug.Log("is " + element.Value + " in list already? " + list.Contains(element));
                 isElement = list.Contains(element);
             }
         }
 
-
-
-
-
         return isElement;
     }
+
     private static bool isNeg1(int x)
     {
         bool isNeg = x.Equals(-1);
@@ -442,7 +498,14 @@ public class LoadTextFromCSV : MonoBehaviour
         return isNull;
     }
 
-
+    string GetAllButLastStr(string s)
+    {
+        if(s.Length < 2)
+        {
+            return s;
+        }
+        return s.Substring(0, s.Length-2);
+    }
 
     public List<Branch> GetBranches()
     {

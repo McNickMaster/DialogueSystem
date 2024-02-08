@@ -38,7 +38,7 @@ public class DialogueLoader : MonoBehaviour
 
         //LoadDialogueBranch("1");
 
-
+        //Debug.Log("does 211 exist? " + (FindBranch("211") != null));
         //SpawnSlide(new Slide("ME", "HI HYD"));
 
         //StartConversation();
@@ -221,7 +221,7 @@ public class DialogueLoader : MonoBehaviour
     Branch FindBranch(string id)
     {
         Branch b = myBranches.Find(x => x.myPathOptions[0].firstSlide.ID == id);
-        Debug.Log("is branch found: " + b != null);
+        Debug.Log("is branch found: " + (b != null));
         return b;
 
     }

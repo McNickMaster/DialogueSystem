@@ -1,0 +1,79 @@
+ID,TITLE,BODY
+0,Vivian DeTour,“Mrs. DeTour speaking”
+1,You,"You: “Hello ma’am, I’m calling about Evan Banks.”"
+11,Vivian DeTour,“Oh! Do- do you know where he is?”
+111,You,"You: “Afraid not, I just have some questions.”"
+1111,You,You: “When did you last see Evan?”
+11111,Vivian DeTour,"“April 9th, he didn’t say where he was going…”"
+111111,Vivian DeTour,"“I guess I didn’t ask him, but oh how I wish I did. I tried calling him when it got late and nothing, so I called the police”[back111]"
+1112,You,You: “What does Evan do for work?”
+11121,Vivian DeTour,"“He works at some dock in Abra City, I couldn’t tell you why. He was always more of a fan of the mountains and forests. He doesn’t even like the water.”[back111]"
+1113,You,You: “Does Evan own a brown fishing jacket?”
+11131,Vivian DeTour,"“Fishing jacket? I doubt it, are you sure it wasn’t some sort of hiking gear? That’d be him.”[back111]"
+1114,You,You: “Does Evan or someone close to him own a boat?”
+11141,Vivian DeTour,"“Own a boat? He’s 26! There’s no way he could afford a boat, nor any of his friends for that matter.”[back111]"
+1115,You,"You: “That’s everything, thanks.”[end]"
+112,You,You: “I’m calling to figure that out.”
+1121,Vivian DeTour,“I see… very well”[back111]
+113,You,You: “We may have found him.”
+1131,Vivian DeTour,“Oh thank God! Oh I’ve missed him so much.”
+11311,You,"You: “We found a body, ma’am. Found in a fishing boat.”"
+113111,Vivian DeTour,“Oh no–! Wait…”
+1131111,Vivian DeTour,“A fishing boat? Evan didn’t fish!”
+11311111,You,You: “Would Evan have gone out with a friend?”
+113111111,Vivian DeTour,“Evan hates being on the sea! This doesn’t make any sense.”
+1131111111,Vivian DeTour,“I can’t– this can’t be true.” *click* [end]
+11311112,You,You: “He could’ve been going to Pettiget Island.”
+113111121,Vivian DeTour,"“For what reason? We don’t know anyone there, he hated sailing.”"
+1131111211,Vivian DeTour,"“Who even are you, I’m calling the police.” *click* [end]"
+11312,You,"You: “He’s dead, killed at sea.”"
+113121,Vivian DeTour,“Killed at sea!? What was he doing out there?! He didn’t even like the sea!”
+1131211,Vivian DeTour,“Is this some sort of sick joke? Who are you!? I’m calling the police.” *click* [end]
+2,You,"You: “I’m a detective with Abra PD, is this Evan Banks’ mother?”"
+21,Vivian DeTour,“yes it is… is there some update with the case?”
+211,You,"You: “Yes, I just need to ask you some questions.”"
+2111,You,You: “When did you last see Evan?”
+21111,Vivian DeTour,"“On the 9th. He was going out for something, but didn't say what.”"
+211111,Vivian DeTour,"“He normally comes home around midnight if he’s hanging out with friends, but I called all of them and they said they hadn’t seen him.”[back211]"
+2112,You,"You: “What did Evan do for work, for fun?”"
+21121,Vivian DeTour,"“For work? He worked at the docks in Abra, which he absolutely hated. He loves hiking and the mountains, not the water– whatsoever.”[back211]"
+2113,You,You: “Did Evan own a brown fishing jacket?”
+21131,Vivian DeTour,"“Well, he didn’t go fishing, so I doubt it. You sure it wasn’t some sort of survival gear?”[back211]"
+2114,You,You: “Did Evan have a boat?”
+21141,Vivian DeTour,"“God no, he works minimum wage.”[back211]"
+2115,You,"You: “I have everything I need, thank you”"
+21151,Vivian DeTour,"“Wait wait wait, what’s the update?”"
+211511,You,"You: “We found a body, I don’t believe it’s Evan’s however.”"
+2115111,Vivian DeTour,“I hope you’re right then. Good bye.” *click* [end]
+211512,You,"You: “We found a body, it may be Evan.”"
+2115121,Vivian DeTour,"“I– I– I’m coming to the station, you need me to identify it right? I’ll– oh my– one second–” *click* [end]"
+212,You,"You: “Possibly, can you tell me about Evan?”"
+2121,Vivian DeTour,"“Sure I suppose… he worked at the dock here in Abra, which he hated. He’s much more interested in hiking and camping, that sort of thing.”"
+21211,Vivian DeTour,“What else do you want to know?”
+21221,You,You: “Why’d he hate his work?”
+212211,Vivian DeTour,"“He hates the water, really, always hated boats. I think he only works at the dock cause… well… it’s all he could get.”[back2122]"
+21222,You,You: “When did you last see him?”
+212221,Vivian DeTour,"“April 9th, he left in the morning, when he didn’t come home, and no one knew where he was, that's when I called the police.”[back2122]"
+21223,You,You: “Did he own a brown fishing jacket?”
+212231,Vivian DeTour,“You sure it wasn’t some survival gear? Cause he didn’t fish.”[back2122]
+21224,You,You: “I think I know all I need to now”[end]
+213,You,"You: “No, I’m calling for a different case.”"
+2131,Vivian DeTour,“Why’re you calling me then?”
+21311,You,You: “I need you to tell me when you last saw Evan.”
+213111,Vivian DeTour,"“Oh, uh, April 9th.”[back2131]"
+21312,You,You: “I need to confirm some things about Evan.”
+213121,You,You: “Does he own a brown fishing jacket?”
+2131211,Vivian DeTour,"“No I don’t think so, he didn’t fish”[back21312]"
+213122,You,You: “Does he have a boat?”
+2131221,Vivian DeTour,"“If he does and didn’t tell me, I’d be royally pissed that’s for sure”"
+21312211,Vivian DeTour,“And confused as to how he afforded it.”[back21312]
+213123,You,"You: “That’s all, thanks for your time”[end]"
+12313,You,You: “To see if they’re related.”
+213131,Vivian DeTour,“Alright I suppose…”[back21312]
+3,You,You: “Can you answer a few questions?”
+31,Vivian DeTour,“I’m not interested in whatever you’re selling”
+311,You,"You: “No no no, I’m a detective.”"
+3111,Vivian DeTour,“Well why didn’t you say so?”[back111]
+312,You,You: “It’s about Evan.”
+3121,Vivian DeTour,“...”
+31211,Vivian DeTour,“Did you find him?”[back212]

@@ -1,0 +1,28 @@
+ID,TITLE,BODY
+0,David Tsarot,“Yeah?”
+1,You,"“Hello, is this David Tsarot?”"
+11,David Tsarot,“This is him. What do you want?”
+111,You,"“I have a few questions about your wife, Hillary.”"
+1111,David Tsarot,“Ah… alright?”
+11111,You,“When did you last see Hillary?”
+111111,David Tsarot,"“April 11th, it was really early, she was already leaving when I woke up.”"
+1111111,David Tsarot,"“She just said she was going to her fitness class, but she never came back. I called the place and they said she didn’t arrive, so– I dunno what to make of that”[back1111]"
+11112,You,“What does she do for work?”
+111121,David Tsarot,“She is a seasonal assistant harbormaster… which is to say she didn’t do all that much.”[back1111]
+11113,You,“Does she own a brown fishing jacket?”
+111131,David Tsarot,"“Why would I know that, I mean– maybe?”[back1111]"
+11114,You,“Do you and your wife own a boat?”
+111141,David Tsarot,"“Yeah, I don’t get to use it all that often, but she wanted one sooo… yknow how it is.”[back1111][unlock11116]"
+11115,You,“That’s all.”[end]
+11116,You,[locked] “What type of boat?”
+111161,David Tsarot,"“Oh I dunno the type, it was a nice one, big sail, just for sailing around. Hillary’s the one interested in all that stuff I just kinda go along with it.”[back1111]"
+2,You,“I’m calling from the Abra Police Department about Hillary Tsarot.”
+21,David Tsarot,"“Oh shit finally, where is she?”"
+211,You,"“No no, she hasn’t been found, I just need to ask some questions.”"
+2111,David Tsarot,“...oh… ok”[back1111]
+212,You,“I was going to ask you.”
+2121,David Tsarot,“Hell I dunno! She could be anywhere.”[back1111]
+213,You,“Up your ass”
+2131,David Tsarot,“Wha- you-” *click* [end]
+3,You,“Do you have a minute?”
+31,David Tsarot,“I guess… why?”[back111]

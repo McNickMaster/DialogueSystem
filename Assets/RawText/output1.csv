@@ -1,23 +1,23 @@
 ID,TITLE,BODY
 0,Eric Meng,"“Hey Detective, don’t mind me”"
 1,You,"“I do mind, so you better get out of my face”"
-11,Eric Meng,"“Duly noted, I’ll be outta here soon” [end]"
+11,Eric Meng,"“Duly noted, I’ll be outta here soon”[end]"
 2,You,“I’m glad to see you”
 21,Eric Meng,“Happy to hear it. What’s up?”
 211,You,“Do you recognize anything here?”
-2111,Eric Meng,"“Believe it or not I do, the driver was a frequent hunter around these parts. Member of the Abra Hunting Club.” [back21] [unlock214]"
+2111,Eric Meng,"“Believe it or not I do, the driver was a frequent hunter around these parts. Member of the Abra Hunting Club.”[back21][unlock214]"
 212,You,“Anything strange stick out to you?”
-2121,Eric Meng,"“Those footprints do, they start and stop without warning. Maybe they jumped away.” [back21]"
+2121,Eric Meng,"“Those footprints do, they start and stop without warning. Maybe they jumped away.”[back21]"
 213,You,"“Not much, what’s up with you?”"
-2131,Eric Meng,“Doing my job I’m afraid” [end]
+2131,Eric Meng,“Doing my job I’m afraid”[end]
 214,You,[locked] “What do you know about the victim?”
-2141,Eric Meng,"“He liked to talk a big game about how he could take on many of the supernatural elements that live around here, always spoutin’ off his plans.” [back21]"
+2141,Eric Meng,"“He liked to talk a big game about how he could take on many of the supernatural elements that live around here, always spoutin’ off his plans.”[back21]"
 3,You,“I got some questions for you”
 31,Eric Meng,“I bet you do”
 311,You,“Do you recognize anything here?”
 3111,Eric Meng,"“I recognize the guy. Frequent hunter around these parts, member of the Abra Hunting Club.”"
-31111,Eric Meng,"“I notice his gun there too, but I wonder why he doesn’t have the rest of his equipment.” [back31]"
+31111,Eric Meng,"“I notice his gun there too, but I wonder why he doesn’t have the rest of his equipment.”[back31]"
 312,You,“Anything strange stick out to you?”
 3121,Eric Meng,"“Those footprints do, they start and stop without warning, and they definitely don’t look human”"
-31211,Eric Meng,“Maybe it’s got other means of getting around.” [back31]
-313,You,"“Actually, I think I got all I need” [end]"
+31211,Eric Meng,“Maybe it’s got other means of getting around.”[back31]
+313,You,"“Actually, I think I got all I need”[end]"

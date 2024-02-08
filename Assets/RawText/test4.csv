@@ -22,191 +22,295 @@ ID,TITLE,BODY
 3121,You,"*Looking inside the bag, you notice some small gray flecks. Looks like scales of some sort, or maybe feathers* [end]"
 @0,Eric Meng,"“Hey Detective, don’t mind me”"
 1,You,"“I do mind, so you better get out of my face”"
-11,Eric Meng,"“Duly noted, I’ll be outta here soon” [end]"
+11,Eric Meng,"“Duly noted, I’ll be outta here soon”[end]"
 2,You,“I’m glad to see you”
 21,Eric Meng,“Happy to hear it. What’s up?”
 211,You,“Do you recognize anything here?”
-2111,Eric Meng,"“Believe it or not I do, the driver was a frequent hunter around these parts. Member of the Abra Hunting Club.” [back21] [unlock214]"
+2111,Eric Meng,"“Believe it or not I do, the driver was a frequent hunter around these parts. Member of the Abra Hunting Club.”[back21][unlock214]"
 212,You,“Anything strange stick out to you?”
-2121,Eric Meng,"“Those footprints do, they start and stop without warning. Maybe they jumped away.” [back21]"
+2121,Eric Meng,"“Those footprints do, they start and stop without warning. Maybe they jumped away.”[back21]"
 213,You,"“Not much, what’s up with you?”"
-2131,Eric Meng,“Doing my job I’m afraid” [end]
+2131,Eric Meng,“Doing my job I’m afraid”[end]
 214,You,[locked] “What do you know about the victim?”
-2141,Eric Meng,"“He liked to talk a big game about how he could take on many of the supernatural elements that live around here, always spoutin’ off his plans.” [back21]"
+2141,Eric Meng,"“He liked to talk a big game about how he could take on many of the supernatural elements that live around here, always spoutin’ off his plans.”[back21]"
 3,You,“I got some questions for you”
 31,Eric Meng,“I bet you do”
 311,You,“Do you recognize anything here?”
 3111,Eric Meng,"“I recognize the guy. Frequent hunter around these parts, member of the Abra Hunting Club.”"
-31111,Eric Meng,"“I notice his gun there too, but I wonder why he doesn’t have the rest of his equipment.” [back31]"
+31111,Eric Meng,"“I notice his gun there too, but I wonder why he doesn’t have the rest of his equipment.”[back31]"
 312,You,“Anything strange stick out to you?”
 3121,Eric Meng,"“Those footprints do, they start and stop without warning, and they definitely don’t look human”"
-31211,Eric Meng,“Maybe it’s got other means of getting around.” [back31]
-313,You,"“Actually, I think I got all I need” [end]"
+31211,Eric Meng,“Maybe it’s got other means of getting around.”[back31]
+313,You,"“Actually, I think I got all I need”[end]"
 @0,Officer Jameson,“Good evening Detective.”
 1,You,"“You were the first officer on scene, correct?”"
 11,Officer Jameson,“That’s correct.”
 111,You,“Who called it in?”
-1111,Officer Jameson,"“Some local saw it first, called it in but didn’t stick around” [back11]"
+1111,Officer Jameson,"“Some local saw it first, called it in but didn’t stick around”[back11]"
 112,You,“What’d you see when you got here?”
-1121,Officer Jameson,"“Everything you see here, except the driver was still alive.” [back11] [unlock115]"
 113,You,“When did you get here?”
-1131,Officer Jameson,“Around 1:30 I wanna say?” [back11]
-114,You,"“That’s all for now, thanks” [end]"
+1131,Officer Jameson,“Around 1:30 I wanna say?”[back11]
+114,You,"“That’s all for now, thanks”[end]"
 115,You,[locked] “He was still alive?”
 1151,Officer Jameson,"“Yep, when I arrived it looked like he was frozen to his seat. I snapped him out of it I think, but then he just started spouting nonsense”"
-11511,Officer Jameson,"“I removed him from the truck, and he wasn’t even bleeding that badly, but then next thing you know he collapses into me, dead.” [back11]"
+11511,Officer Jameson,"“I removed him from the truck, and he wasn’t even bleeding that badly, but then next thing you know he collapses into me, dead.”[back11]"
 2,You,"“‘Good’ is debatable, given the circumstances”"
 21,Officer Jameson,“I’m doing fine.”
 211,You,"“Not the point, listen, can you answer some questions?”"
-2111,Officer Jameson,“If I gotta” [back213]
+2111,Officer Jameson,“If I gotta”[back213]
 212,You,“Hm. You got a minute?”
-2121,Officer Jameson,“I guess.” [back213]
+2121,Officer Jameson,“I guess.”[back213]
 213,You,*jump right to your questions*
 2131,You,“Who called it in?”
-21311,Officer Jameson,"“Oh I dunno, some local driver. Doubt he stuck around” [back213]"
+21311,Officer Jameson,"“Oh I dunno, some local driver. Doubt he stuck around”[back213]"
 2132,You,“What’d you see when you got here?”
-21321,Officer Jameson,"“All this, just darker. Oh, and the driver was alive I suppose.” [back213] [unlock2135]"
+21321,Officer Jameson,"“All this, just darker. Oh, and the driver was alive I suppose.”[back213][unlock2135]"
 2133,You,“When did you get here?”
-21331,Officer Jameson,“Sometime around 1:30” [back213]
-2134,You,"“That’s all for now, thanks” [end]"
+21331,Officer Jameson,“Sometime around 1:30”[back213]
+2134,You,"“That’s all for now, thanks”[end]"
 2135,You,[locked] “You said he was still alive?”
 21351,Officer Jameson,"“Yep, when I arrived it looked like he was frozen to his seat. I snapped him out of it I think, but then he just started spouting nonsense”"
-213511,Officer Jameson,"“I removed him from the truck, and he wasn’t even bleeding that badly, but then next thing you know he collapses into me, dead.” [back213]"
+213511,Officer Jameson,"“I removed him from the truck, and he wasn’t even bleeding that badly, but then next thing you know he collapses into me, dead.”[back213]"
 3,You,“I have some questions”
 31,Officer Jameson,“Shoot.”
 311,You,"“You were the first one here, right?”"
-3111,Officer Jameson,"“Yep. Some local called in a crash, I got here right before the ambulance, tried helping the driver out of the truck.” [back31] [unlock 315]"
+3111,Officer Jameson,"“Yep. Some local called in a crash, I got here right before the ambulance, tried helping the driver out of the truck.”[back31][unlock 315]"
 312,You,“When did this happen?”
 3121,Officer Jameson,"“Oh I dunno, I got here around 1:30. The crash couldn’t have happened too much earlier than that"" [back31]"
 313,You,“Put anything together yourself?”
-3131,Officer Jameson,"“I’ve put together that some idiot lost control of his vehicle and crashed it, killing himself in the process. Why’re you here again?” [back31] [unlock316]"
-314,You,“I think that’s everything” [end]
+3131,Officer Jameson,"“I’ve put together that some idiot lost control of his vehicle and crashed it, killing himself in the process. Why’re you here again?”[back31][unlock316]"
+314,You,“I think that’s everything”[end]
 315,You,[locked] “What condition was the driver in?”
 3151,Officer Jameson,"“He was still alive, at first he wasn’t responsive at all, but I think I snapped him out of it when I tried moving him, and he lost it.”"
 31511,You,“What do you mean he ‘lost it’?”
-315111,Officer Jameson,"“Like, rambling and sputtering, all nonsense, but he must’ve tired himself out cause after a bit he collapsed.” [back31]"
+315111,Officer Jameson,"“Like, rambling and sputtering, all nonsense, but he must’ve tired himself out cause after a bit he collapsed.”[back31]"
 31512,You,“How hurt was he?”
-315121,Officer Jameson,"“He didn’t look too bad to be honest. I’ve seen more people survive worse, sure he was bleeding, but nowhere important. But then, after a minute, the poor dude just collapsed into me.” [back31]"
-31513,You,“Crash must’ve rattled him badly” [back31]
+315121,Officer Jameson,"“He didn’t look too bad to be honest. I’ve seen more people survive worse, sure he was bleeding, but nowhere important. But then, after a minute, the poor dude just collapsed into me.”[back31]"
+31513,You,“Crash must’ve rattled him badly”[back31]
 316,You,[locked] “I’m here cause it’s not as simple as that”
-3161,Officer Jameson,“Why’d you even bother to ask” [back31]
+3161,Officer Jameson,“Why’d you even bother to ask”[back31]
 @0,Eric Meng,"“Good afternoon, Detective”"
 1,You,“What’s up?”
 11,Eric Meng,"“Just doin’ my job, you just come by to chat?”"
 111,You,"""Yep, not too worried about this case”"
-1111,Eric Meng,"“That’s either a great sign, or a terrible one” [end]"
+1111,Eric Meng,"“That’s either a great sign, or a terrible one”[end]"
 112,You,"“Nah, just got some questions for you”"
 1121,Eric Meng,“I see.”
 11211,You,“What do you make of this?”
-112111,Eric Meng,"“I dunno, looks like some washed up wreck, definitely got attacked out there, but who knows why” [back1121]"
+112111,Eric Meng,"“I dunno, looks like some washed up wreck, definitely got attacked out there, but who knows why”[back1121]"
 11212,You,“This doesn’t happen often does it?”
-112121,Eric Meng,"“No it does not, and good thing too, given a lot of ours dependence on the water” [back1121] [unlock11215]"
+112121,Eric Meng,"“No it does not, and good thing too, given a lot of ours dependence on the water”[back1121][unlock11215]"
 11213,You,“Do you know anything about this victim?”
-112131,Eric Meng,"“All I see is a hand, so I don’t know how I’d recognize them.” [back1121] [unlock11216]"
-11214,You,“I think that’s everything” [end]
+112131,Eric Meng,"“All I see is a hand, so I don’t know how I’d recognize them.”[back1121][unlock11216]"
+11214,You,“I think that’s everything”[end]
 11215,You,[locked] “Why isn’t this more common?”
-112151,Eric Meng,"“Most creatures in the sea aren’t that aggressive, especially towards big ships with barely any meat on them. This couldn’t have been a random attack.” [back1121]"
+112151,Eric Meng,"“Most creatures in the sea aren’t that aggressive, especially towards big ships with barely any meat on them. This couldn’t have been a random attack.”[back1121]"
 11216,You,"[locked] “Must’ve been a fisher though, right?”"
-112161,Eric Meng,"“This is a fishing ship, but I don’t see the typical equipment. Plenty of fishermen have odd jobs around here, maybe they were on an errand.” [back1121]"
+112161,Eric Meng,"“This is a fishing ship, but I don’t see the typical equipment. Plenty of fishermen have odd jobs around here, maybe they were on an errand.”[back1121]"
 2,You,"“Good afternoon, just got a few questions.”"
 21,Eric Meng,"“Sure thing, ask away”"
 211,You,“Notice anything off?”
 2111,Eric Meng,“The only thing off is this whole ordeal.”
-21111,Eric Meng,"“These sorts of attacks almost never happen, Abra’s sea creatures don’t bother us lest we bother them.” [back21] [unlock215]"
+21111,Eric Meng,"“These sorts of attacks almost never happen, Abra’s sea creatures don’t bother us lest we bother them.”[back21][unlock215]"
 212,You,“Know anything about the victim?”
-2121,Eric Meng,"“It’s just a hand, so– no. The most I can surmise is they were a fisher.” [back21]"
+2121,Eric Meng,"“It’s just a hand, so– no. The most I can surmise is they were a fisher.”[back21]"
 213,You,“Know anything about the ship?”
-2131,Eric Meng,"“Seems like a standard gillnetter, fishing ship, though they could’ve been using it for anything. A lot of sailors in Oldport have side-gigs.” [back21]"
-214,You,"“Thanks for your help, that’s all” [end]"
+2131,Eric Meng,"“Seems like a standard gillnetter, fishing ship, though they could’ve been using it for anything. A lot of sailors in Oldport have side-gigs.”[back21]"
+214,You,"“Thanks for your help, that’s all”[end]"
 215,You,[locked] “What could the victim have done to provoke something?”
-2151,Eric Meng,"“Besides attacking them? I got no clue, unless the captain was a fool, they would’ve known not to harass anything.” [back21]"
+2151,Eric Meng,"“Besides attacking them? I got no clue, unless the captain was a fool, they would’ve known not to harass anything.”[back21]"
 3,You,“You got a minute?”
 31,Eric Meng,"“Just one, why?”"
 311,You,“I’ll make it quick then”
-3111,Eric Meng,“Better get to your point” [back31]
+3111,Eric Meng,“Better get to your point”[back31]
 312,You,“What’ve you put together so far?”
-3121,Eric Meng,"“Not much, the ship was obviously attacked, but by what? Oldport’s sailors know better than to provoke any sea creatures.” [back31] [unlock316]"
+3121,Eric Meng,"“Not much, the ship was obviously attacked, but by what? Oldport’s sailors know better than to provoke any sea creatures.”[back31][unlock316]"
 313,You,“Have you seen this happen before?”
-3131,Eric Meng,"“A wreck like this? Almost never happens, good thing too, given the town’s dependence on the water.” [back31]"
+3131,Eric Meng,"“A wreck like this? Almost never happens, good thing too, given the town’s dependence on the water.”[back31]"
 314,You,“Know anything about the ship or crew?”
-3141,Eric Meng,"“Typical gillnetter like this would just have one or two people manning it, given that there’s just the one hand and no other signs, I’m assuming just one sailor.” [back31] [unlock317]"
-315,You,"“My minute’s up, that’s everything.” [end]"
+3141,Eric Meng,"“Typical gillnetter like this would just have one or two people manning it, given that there’s just the one hand and no other signs, I’m assuming just one sailor.”[back31][unlock317]"
+315,You,"“My minute’s up, that’s everything.”[end]"
 316,You,[locked] “What would provoke something?”
-3161,Eric Meng,"“Oh I dunno, attacking it I guess? Staying too long in its territory maybe?” [back31]"
+3161,Eric Meng,"“Oh I dunno, attacking it I guess? Staying too long in its territory maybe?”[back31]"
 317,You,"[locked] “Gillnetter, that a fishing vessel?”"
-3171,Eric Meng,"“Most often, though so many sailors around here have odd jobs, who knows what they were up to” [back31]"
+3171,Eric Meng,"“Most often, though so many sailors around here have odd jobs, who knows what they were up to”[back31]"
 4,You,“Not so good now that you’re here.”
-41,Eric Meng,"“Y’know, I don’t know what your problem with me is” [end]"
+41,Eric Meng,"“Y’know, I don’t know what your problem with me is”[end]"
 @0,Old Sailor,“Oh! Hello there sir”
 1,You,“I have some questions for you.”
 11,Old Sailor,"“Who, me? I don’t know how much help I’ll be, but okay.”"
 111,You,“Do you live or work in the area?”
-1111,Old Sailor,"“Aye! I’m a sailor here in Oldport, mostly fishing, sometime tours, odd jobs.” [back11][unlock115]"
+1111,Old Sailor,"“Aye! I’m a sailor here in Oldport, mostly fishing, sometime tours, odd jobs.”[back11][unlock115]"
 112,You,“Do you recognize the ship?”
-1121,Old Sailor,"“Yessir, that’s a gillnetter. Fishing ship, decent enough to get you as far as Pettiget by the looks of it.” [back11]"
+1121,Old Sailor,"“Yessir, that’s a gillnetter. Fishing ship, decent enough to get you as far as Pettiget by the looks of it.”[back11]"
 113,You,“Know what could’ve done this?”
-1131,Old Sailor,"“Ah hell, no clue. We’ve got a lot of sea beasties in this lake, but us sailors know how to avoid them and they know to avoid us, so I dunno what changed here.” [back11]"
-114,You,“No further questions.” [end]
+1131,Old Sailor,"“Ah hell, no clue. We’ve got a lot of sea beasties in this lake, but us sailors know how to avoid them and they know to avoid us, so I dunno what changed here.”[back11]"
+114,You,“No further questions.”[end]
 115,You,"[locked] ""Do a lot of people here have odd jobs?”"
-1151,Old Sailor,"“Oh for sure, most people I know got a side gig or two. Most commonly quick trips to Pettiget, sometimes passengers, sometimes cargo.” [back11]"
+1151,Old Sailor,"“Oh for sure, most people I know got a side gig or two. Most commonly quick trips to Pettiget, sometimes passengers, sometimes cargo.”[back11]"
 2,You,"""Hello, you are?”"
 21,Fred Fiegel,“Fred Fiegel! Captain of the Betty Blue.”
 211,You,“Can you tell me what kind of ship that is?”
-2111,Fred Fiegel,"“That there’s a gillnetter, fishin’ ship mostly, though some just use ‘em to sail around, maybe back and forth between Pettiget.” [back21]"
+2111,Fred Fiegel,"“That there’s a gillnetter, fishin’ ship mostly, though some just use ‘em to sail around, maybe back and forth between Pettiget.”[back21]"
 212,You,“Do you recognize that ship?”
-2121,Fred Fiegel,"“The specific one? Nah, can’t say I do. I’m sure I’ve probably seen it around here before, but my memory’s not what it used to be.” [back21]"
+2121,Fred Fiegel,"“The specific one? Nah, can’t say I do. I’m sure I’ve probably seen it around here before, but my memory’s not what it used to be.”[back21]"
 213,You,“Do you know the area well?”
-2131,Fred Fiegel,“Like the back of my hand!” [back21 [unlock215] [unlock216]
-214,You,"“Thanks for your help, that’ll be all” [end]"
+2131,Fred Fiegel,“Like the back of my hand!”[back21 [unlock215][unlock216]
+214,You,"“Thanks for your help, that’ll be all”[end]"
 215,You,[locked] “What can you tell me about the route to Pettiget from here?”
-2151,Fred Fiegel,"“The water’s not too treacherous on its own, but the visibility is often pretty shit. Were someone to sail on their own they’d need to be fairly experienced.” [back21]"
+2151,Fred Fiegel,"“The water’s not too treacherous on its own, but the visibility is often pretty shit. Were someone to sail on their own they’d need to be fairly experienced.”[back21]"
 216,You,[locked] “What can you tell me about the creatures that live in the lake?”
-2161,Fred Fiegel,"“Oh there’s plenty, a few make their homes around Pettiget, nests and whatnot. Though we’ve got all those spots marked so we know to avoid ‘em.” [back21]"
+2161,Fred Fiegel,"“Oh there’s plenty, a few make their homes around Pettiget, nests and whatnot. Though we’ve got all those spots marked so we know to avoid ‘em.”[back21]"
 3,You,"“Hello, you have a minute?”"
 31,Old Sailor,"“Oh sure thing, d’ya need me for something?”"
 311,You,"""Just need you to answer some questions.”"
 3111,You,“What could’ve done this to a ship?”
-31111,Old Sailor,"“Oh there’s plenty that could’ve, but I dunno many that would’ve. No real reason for our beasties to attack us, we’re hardly worth the trouble to eat.” [back311]"
+31111,Old Sailor,"“Oh there’s plenty that could’ve, but I dunno many that would’ve. No real reason for our beasties to attack us, we’re hardly worth the trouble to eat.”[back311]"
 3112,You,“What was this ship doing out there?”
-31121,Old Sailor,"“Coulda been just out fishing, but I don’t see any big nets prepared. They might have been doin’ some errands, lotta sailors get hired to transport things to and from Pettiget.” [back311]"
+31121,Old Sailor,"“Coulda been just out fishing, but I don’t see any big nets prepared. They might have been doin’ some errands, lotta sailors get hired to transport things to and from Pettiget.”[back311]"
 3113,You,“Where would this ship have been sailing?”
 31131,Old Sailor,"“Either sittin’ out in the open water, or to Pettiget Island.”"
-311311,Old Sailor,“The trip across the lake ain’t really viable.” [back311]
+311311,Old Sailor,“The trip across the lake ain’t really viable.”[back311]
 312,You,“I was wondering if you had any insights?”
 3121,Old Sailor,“Insights into what? The wreck? Oh jeez I dunno”
 31211,You,“Just– tell me if you know anything useful”
-312111,Old Sailor,"“Ah heck, I dunno what you’d think is useful. That’s a gillnetter there, doesn’t go far, so I dunno what could’ve wrecked it. Nothin’ between here and Pettiget ever really attacks us sailors” [back3121] [unlock31214]"
+312111,Old Sailor,"“Ah heck, I dunno what you’d think is useful. That’s a gillnetter there, doesn’t go far, so I dunno what could’ve wrecked it. Nothin’ between here and Pettiget ever really attacks us sailors”[back3121][unlock31214]"
 31212,You,"""Any clue what caused the wreck?”"
-312121,Old Sailor,"“I mean that’s some nasty damage to the hull, no ordinary crash I can tell you that!” [back3121]"
-31213,You,“Nevermind.” [end]
+312121,Old Sailor,"“I mean that’s some nasty damage to the hull, no ordinary crash I can tell you that!”[back3121]"
+31213,You,“Nevermind.”[end]
 31214,You,[locked] “What sorts of things live between here and Pettiget?”
-312141,Old Sailor,"“Ohhh, the Mahamba and Nguma-monene are the first to mind, but neither would attack a ship like this unless they were like– personally pissed!” [back3121]"
+312141,Old Sailor,"“Ohhh, the Mahamba and Nguma-monene are the first to mind, but neither would attack a ship like this unless they were like– personally pissed!”[back3121]"
 313,You,“Tell me who you are.”
-3131,Old Sailor,"“Oh! Fred Fiegel, I’m a sailor ‘round here” [back3121]"
+3131,Old Sailor,"“Oh! Fred Fiegel, I’m a sailor ‘round here”[back3121]"
 @0,Amelia Watson,“Can I help you?”
 1,You,"“Yes you can, as a matter of fact.”"
 11,Amelia Watson,“Well what do you need?”
 111,You,“Got any theories to share with me?”
-1111,Amelia Watson,"“Nothing yet, I’ve gotta take a closer look at this damage and see what could’ve done something like this.” [back11]"
+1111,Amelia Watson,"“Nothing yet, I’ve gotta take a closer look at this damage and see what could’ve done something like this.”[back11]"
 112,You,“I just got some questions.”
 1121,Amelia Watson,“Sure thing.”
 11211,You,“How bad’s the damage?”
-112111,Amelia Watson,"“Not the worst, whatever attacked either did a poor job of sinking the ship, or it was just targeting whoever was onboard.” [back1121]"
+112111,Amelia Watson,"“Not the worst, whatever attacked either did a poor job of sinking the ship, or it was just targeting whoever was onboard.”[back1121]"
 11212,You,“What happened to the victim?”
-112121,Amelia Watson,"“Had their hand bitten off– or… well, their hand had them bitten off. Wasn’t a clean cut either.” [back1121]"
+112121,Amelia Watson,"“Had their hand bitten off– or… well, their hand had them bitten off. Wasn’t a clean cut either.”[back1121]"
 11213,You,“Care to share your pictures with me?”
-112131,Amelia Watson,“I’ll send them over once I’m done with them.” [back1121]
-11214,You,“That’s all.” [end]
+112131,Amelia Watson,“I’ll send them over once I’m done with them.”[back1121]
+11214,You,“That’s all.”[end]
 113,You,“I need copies of the pictures you’re taking.”
-1131,Amelia Watson,“I’ll send them over to your office asap.” [back11]
-114,You,“I’m all set.” [end]
+1131,Amelia Watson,“I’ll send them over to your office asap.”[back11]
+114,You,“I’m all set.”[end]
 2,You,“What’re you doing?”
 21,Amelia Watson,"“Investigating, organizing, snapping pictures, that sorta thing.”"
 211,You,“How bad’s the damage?”
-2111,Amelia Watson,"“On the boat? Not bad, I mean, it managed to still drift back to shore. Whatever attacked it didn’t intend to sink it, I don’t think. The marks look like it was getting at something onboard.” [back21]"
+2111,Amelia Watson,"“On the boat? Not bad, I mean, it managed to still drift back to shore. Whatever attacked it didn’t intend to sink it, I don’t think. The marks look like it was getting at something onboard.”[back21]"
 212,You,“What’s the deal with the hand?”
 2121,Amelia Watson,“Bitten clean off– well… not really actually”
-21211,Amelia Watson,"“The body was bitten off the hand, and it wasn’t a clean bite either.” [back21]"
+21211,Amelia Watson,"“The body was bitten off the hand, and it wasn’t a clean bite either.”[back21]"
 213,You,“I need whatever information you’ve gathered here.”
-2131,Amelia Watson,“I suppose I could send my photos over once I’m done with them.” [back21]
-214,You,"“That’s all I need to know, thanks” [end]"
+2131,Amelia Watson,“I suppose I could send my photos over once I’m done with them.”[back21]
+214,You,"“That’s all I need to know, thanks”[end]"
+@0,David Tsarot,“Yeah?”
+1,You,"“Hello, is this David Tsarot?”"
+11,David Tsarot,“This is him. What do you want?”
+111,You,"“I have a few questions about your wife, Hillary.”"
+1111,David Tsarot,“Ah… alright?”
+11111,You,“When did you last see Hillary?”
+111111,David Tsarot,"“April 11th, it was really early, she was already leaving when I woke up.”"
+1111111,David Tsarot,"“She just said she was going to her fitness class, but she never came back. I called the place and they said she didn’t arrive, so– I dunno what to make of that”[back1111]"
+11112,You,“What does she do for work?”
+111121,David Tsarot,“She is a seasonal assistant harbormaster… which is to say she didn’t do all that much.”[back1111]
+11113,You,“Does she own a brown fishing jacket?”
+111131,David Tsarot,"“Why would I know that, I mean– maybe?”[back1111]"
+11114,You,“Do you and your wife own a boat?”
+111141,David Tsarot,"“Yeah, I don’t get to use it all that often, but she wanted one sooo… yknow how it is.”[back1111][unlock11116]"
+11115,You,“That’s all.”[end]
+11116,You,[locked] “What type of boat?”
+111161,David Tsarot,"“Oh I dunno the type, it was a nice one, big sail, just for sailing around. Hillary’s the one interested in all that stuff I just kinda go along with it.”[back1111]"
+2,You,“I’m calling from the Abra Police Department about Hillary Tsarot.”
+21,David Tsarot,"“Oh shit finally, where is she?”"
+211,You,"“No no, she hasn’t been found, I just need to ask some questions.”"
+2111,David Tsarot,“...oh… ok”[back1111]
+212,You,“I was going to ask you.”
+2121,David Tsarot,“Hell I dunno! She could be anywhere.”[back1111]
+213,You,“Up your ass”
+2131,David Tsarot,“Wha- you-” *click* [end]
+3,You,“Do you have a minute?”
+31,David Tsarot,“I guess… why?”[back111]
+@0,Vivian DeTour,“Mrs. DeTour speaking”
+1,You,"You: “Hello ma’am, I’m calling about Evan Banks.”"
+11,Vivian DeTour,“Oh! Do- do you know where he is?”
+111,You,"You: “Afraid not, I just have some questions.”"
+1111,You,You: “When did you last see Evan?”
+11111,Vivian DeTour,"“April 9th, he didn’t say where he was going…”"
+111111,Vivian DeTour,"“I guess I didn’t ask him, but oh how I wish I did. I tried calling him when it got late and nothing, so I called the police”[back111]"
+1112,You,You: “What does Evan do for work?”
+11121,Vivian DeTour,"“He works at some dock in Abra City, I couldn’t tell you why. He was always more of a fan of the mountains and forests. He doesn’t even like the water.”[back111]"
+1113,You,You: “Does Evan own a brown fishing jacket?”
+11131,Vivian DeTour,"“Fishing jacket? I doubt it, are you sure it wasn’t some sort of hiking gear? That’d be him.”[back111]"
+1114,You,You: “Does Evan or someone close to him own a boat?”
+11141,Vivian DeTour,"“Own a boat? He’s 26! There’s no way he could afford a boat, nor any of his friends for that matter.”[back111]"
+1115,You,"You: “That’s everything, thanks.”[end]"
+112,You,You: “I’m calling to figure that out.”
+1121,Vivian DeTour,“I see… very well”[back111]
+113,You,You: “We may have found him.”
+1131,Vivian DeTour,“Oh thank God! Oh I’ve missed him so much.”
+11311,You,"You: “We found a body, ma’am. Found in a fishing boat.”"
+113111,Vivian DeTour,“Oh no–! Wait…”
+1131111,Vivian DeTour,“A fishing boat? Evan didn’t fish!”
+11311111,You,You: “Would Evan have gone out with a friend?”
+113111111,Vivian DeTour,“Evan hates being on the sea! This doesn’t make any sense.”
+1131111111,Vivian DeTour,“I can’t– this can’t be true.” *click* [end]
+11311112,You,You: “He could’ve been going to Pettiget Island.”
+113111121,Vivian DeTour,"“For what reason? We don’t know anyone there, he hated sailing.”"
+1131111211,Vivian DeTour,"“Who even are you, I’m calling the police.” *click* [end]"
+11312,You,"You: “He’s dead, killed at sea.”"
+113121,Vivian DeTour,“Killed at sea!? What was he doing out there?! He didn’t even like the sea!”
+1131211,Vivian DeTour,“Is this some sort of sick joke? Who are you!? I’m calling the police.” *click* [end]
+2,You,"You: “I’m a detective with Abra PD, is this Evan Banks’ mother?”"
+21,Vivian DeTour,“yes it is… is there some update with the case?”
+211,You,"You: “Yes, I just need to ask you some questions.”"
+2111,You,You: “When did you last see Evan?”
+21111,Vivian DeTour,"“On the 9th. He was going out for something, but didn't say what.”"
+211111,Vivian DeTour,"“He normally comes home around midnight if he’s hanging out with friends, but I called all of them and they said they hadn’t seen him.”[back211]"
+2112,You,"You: “What did Evan do for work, for fun?”"
+21121,Vivian DeTour,"“For work? He worked at the docks in Abra, which he absolutely hated. He loves hiking and the mountains, not the water– whatsoever.”[back211]"
+2113,You,You: “Did Evan own a brown fishing jacket?”
+21131,Vivian DeTour,"“Well, he didn’t go fishing, so I doubt it. You sure it wasn’t some sort of survival gear?”[back211]"
+2114,You,You: “Did Evan have a boat?”
+21141,Vivian DeTour,"“God no, he works minimum wage.”[back211]"
+2115,You,"You: “I have everything I need, thank you”"
+21151,Vivian DeTour,"“Wait wait wait, what’s the update?”"
+211511,You,"You: “We found a body, I don’t believe it’s Evan’s however.”"
+2115111,Vivian DeTour,“I hope you’re right then. Good bye.” *click* [end]
+211512,You,"You: “We found a body, it may be Evan.”"
+2115121,Vivian DeTour,"“I– I– I’m coming to the station, you need me to identify it right? I’ll– oh my– one second–” *click* [end]"
+212,You,"You: “Possibly, can you tell me about Evan?”"
+2121,Vivian DeTour,"“Sure I suppose… he worked at the dock here in Abra, which he hated. He’s much more interested in hiking and camping, that sort of thing.”"
+21211,Vivian DeTour,“What else do you want to know?”
+21221,You,You: “Why’d he hate his work?”
+212211,Vivian DeTour,"“He hates the water, really, always hated boats. I think he only works at the dock cause… well… it’s all he could get.”[back2122]"
+21222,You,You: “When did you last see him?”
+212221,Vivian DeTour,"“April 9th, he left in the morning, when he didn’t come home, and no one knew where he was, that's when I called the police.”[back2122]"
+21223,You,You: “Did he own a brown fishing jacket?”
+212231,Vivian DeTour,“You sure it wasn’t some survival gear? Cause he didn’t fish.”[back2122]
+21224,You,You: “I think I know all I need to now”[end]
+213,You,"You: “No, I’m calling for a different case.”"
+2131,Vivian DeTour,“Why’re you calling me then?”
+21311,You,You: “I need you to tell me when you last saw Evan.”
+213111,Vivian DeTour,"“Oh, uh, April 9th.”[back2131]"
+21312,You,You: “I need to confirm some things about Evan.”
+213121,You,You: “Does he own a brown fishing jacket?”
+2131211,Vivian DeTour,"“No I don’t think so, he didn’t fish”[back21312]"
+213122,You,You: “Does he have a boat?”
+2131221,Vivian DeTour,"“If he does and didn’t tell me, I’d be royally pissed that’s for sure”"
+21312211,Vivian DeTour,“And confused as to how he afforded it.”[back21312]
+213123,You,"You: “That’s all, thanks for your time”[end]"
+12313,You,You: “To see if they’re related.”
+213131,Vivian DeTour,“Alright I suppose…”[back21312]
+3,You,You: “Can you answer a few questions?”
+31,Vivian DeTour,“I’m not interested in whatever you’re selling”
+311,You,"You: “No no no, I’m a detective.”"
+3111,Vivian DeTour,“Well why didn’t you say so?”[back111]
+312,You,You: “It’s about Evan.”
+3121,Vivian DeTour,“...”
+31211,Vivian DeTour,“Did you find him?”[back212]

@@ -3,26 +3,26 @@ ID,TITLE,BODY
 1,You,"“Yes you can, as a matter of fact.”"
 11,Amelia Watson,“Well what do you need?”
 111,You,“Got any theories to share with me?”
-1111,Amelia Watson,"“Nothing yet, I’ve gotta take a closer look at this damage and see what could’ve done something like this.” [back11]"
+1111,Amelia Watson,"“Nothing yet, I’ve gotta take a closer look at this damage and see what could’ve done something like this.”[back11]"
 112,You,“I just got some questions.”
 1121,Amelia Watson,“Sure thing.”
 11211,You,“How bad’s the damage?”
-112111,Amelia Watson,"“Not the worst, whatever attacked either did a poor job of sinking the ship, or it was just targeting whoever was onboard.” [back1121]"
+112111,Amelia Watson,"“Not the worst, whatever attacked either did a poor job of sinking the ship, or it was just targeting whoever was onboard.”[back1121]"
 11212,You,“What happened to the victim?”
-112121,Amelia Watson,"“Had their hand bitten off– or… well, their hand had them bitten off. Wasn’t a clean cut either.” [back1121]"
+112121,Amelia Watson,"“Had their hand bitten off– or… well, their hand had them bitten off. Wasn’t a clean cut either.”[back1121]"
 11213,You,“Care to share your pictures with me?”
-112131,Amelia Watson,“I’ll send them over once I’m done with them.” [back1121]
-11214,You,“That’s all.” [end]
+112131,Amelia Watson,“I’ll send them over once I’m done with them.”[back1121]
+11214,You,“That’s all.”[end]
 113,You,“I need copies of the pictures you’re taking.”
-1131,Amelia Watson,“I’ll send them over to your office asap.” [back11]
-114,You,“I’m all set.” [end]
+1131,Amelia Watson,“I’ll send them over to your office asap.”[back11]
+114,You,“I’m all set.”[end]
 2,You,“What’re you doing?”
 21,Amelia Watson,"“Investigating, organizing, snapping pictures, that sorta thing.”"
 211,You,“How bad’s the damage?”
-2111,Amelia Watson,"“On the boat? Not bad, I mean, it managed to still drift back to shore. Whatever attacked it didn’t intend to sink it, I don’t think. The marks look like it was getting at something onboard.” [back21]"
+2111,Amelia Watson,"“On the boat? Not bad, I mean, it managed to still drift back to shore. Whatever attacked it didn’t intend to sink it, I don’t think. The marks look like it was getting at something onboard.”[back21]"
 212,You,“What’s the deal with the hand?”
 2121,Amelia Watson,“Bitten clean off– well… not really actually”
-21211,Amelia Watson,"“The body was bitten off the hand, and it wasn’t a clean bite either.” [back21]"
+21211,Amelia Watson,"“The body was bitten off the hand, and it wasn’t a clean bite either.”[back21]"
 213,You,“I need whatever information you’ve gathered here.”
-2131,Amelia Watson,“I suppose I could send my photos over once I’m done with them.” [back21]
-214,You,"“That’s all I need to know, thanks” [end]"
+2131,Amelia Watson,“I suppose I could send my photos over once I’m done with them.”[back21]
+214,You,"“That’s all I need to know, thanks”[end]"

@@ -169,7 +169,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textAsset: {fileID: 0}
-  fileToLoad: output1
+  fileToLoad: output2
   convoIDToLoad: A
   myBranches: []
   dialogueParent: {fileID: 1074414256}
