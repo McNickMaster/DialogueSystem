@@ -1,0 +1,47 @@
+ID,TITLE,BODY
+0,Renee Bondopulos,“Hello?”
+1,You,"“Hello, is this Renee Bondopulos?”"
+11,Renee Bondopulos,"“This is her, and you are?”"
+111,You,“I’m a detective with the ACPD.”
+1111,Renee Bondopulos,"“I see, and you’re calling about…?”"
+11111,You,"“Your father, Eugene.”"
+111111,You,“When did you last see him?”
+1111111,Renee Bondopulos,"“April 5th. He seemed excited, but also busy, so I didn’t want to bother him with questions. Didn’t see him around much that day, then the next day when he wasn’t at home I reported him missing.” [back11111] [unlock111114]"
+111112,You,“Does he own a brown fishing jacket?”
+1111121,Renee Bondopulos,"“He definitely could’ve, he owned a lot of fishing gear.” [back11111]"
+111113,You,“No further questions.” [end]
+111114,You,[locked] “What was he busy doing?”
+1111141,Renee Bondopulos,"“Oh I dunno, he was digging through his closet when I looked in.” [back11111]"
+112,You,“I’m curious what you can tell me about Eugene Bondopulos.”
+1121,Renee Bondopulos,“No thanks.” *click* [end]
+2,You,"“Hello, I just have a few questions about Eugene Bondopulos.”"
+21,Renee Bondopulos,“Why? Who are you?”
+211,You,"“I’m a detective, I just need to get some more information about your father.”"
+2111,Renee Bondopulos,“Very well I suppose.” [back11111]
+212,You,"“That’s not important, just answer my questions.”"
+2121,Renee Bondopulos,"“Mmmm. No, and don’t call back.” [end]"
+3,You,"“This is the Abra Police Department, do you have a moment?”"
+31,Renee Bondopulos,“Why?”
+311,You,“I was hoping you could answer some questions about your father.”
+3111,Renee Bondopulos,"“Alright, I’ve got a second”"
+31111,You,“When did you last see Eugene?”
+311111,Renee Bondopulos,"“April 5th, he was busy in his room so I didn’t bug him. I went to school and when I got back he was gone.” [back3111]"
+31112,You,“Does Eugene go fishing often?”
+311121,Renee Bondopulos,"“Oh all the time. He was a fisher, and even when he wasn’t at work, all he wanted to do was fish.” [back3111]"
+31113,You,“Does your father own a brown fishing jacket?”
+311131,Renee Bondopulos,"“Probably. I don’t know for sure, but he had all sorts of fishing gear.” [back3111]"
+31114,You,"“That’s all, thanks for your help.” [end]"
+312,You,“I’m working a case and need to ID the victim.”
+3121,Renee Bondopulos,“You think it may be my father?”
+31211,Renee Bondopulos,“...what do you need to know?”
+312111,You,“When did you last see Eugene?”
+3121111,Renee Bondopulos,"“April 5th, he was busy in his room so I didn’t bug him. I went to school and when I got back he was gone.” [back31211]"
+312112,You,“Does Eugene go fishing often?”
+3121121,Renee Bondopulos,"“Oh all the time. He was a fisher, and even when he wasn’t at work, all he wanted to do was fish.” [back31211]"
+312113,You,“Does your father own a brown fishing jacket?”
+3121131,Renee Bondopulos,"“Probably. I don’t know for sure, but he had all sorts of fishing gear.” [back31211]"
+312114,You,"“That’s all, thanks for your help.”"
+3121141,Renee Bondopulos,"“Wait, is that enough? Is it… did you find Dad?”"
+31211411,You,"“It’s not him, don’t worry.” [end]"
+31211412,You,"“Possibly, we’ll be in touch.” [end]"
+31211413,You,"“Unfortunately it’s likely, someone from the department will call you soon.” [end]"

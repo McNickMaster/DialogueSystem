@@ -1,0 +1,63 @@
+ID,TITLE,BODY
+0,Carter Plank,"“Hello, who is this?”"
+1,You,"You: “I’m just calling from the Abra Police Department, got a few questions.”"
+11,Carter Plank,“I’m not in trouble am I?”
+111,You,"You: “No you’re not, I just need to talk about Timothy Plank.”"
+1111,Carter Plank,"“Oh, right. What do you need to know?”"
+11111,You,You: “Who saw him last?”
+111111,Carter Plank,"“Probably his buddies at work. I talked to him earlier this month, around the 3rd maybe.”"
+1111111,Carter Plank,"“When I went by on the 9th just to say hi he wasn’t around, and his boss said he hadn’t been to work in a day or two, so that's when I reported him missing” [back1111]"
+11112,You,You: “What does he do for work?”
+111121,Carter Plank,"“He’s a fisherman, works around here in Oldport. I don’t really know exactly what he does, but he sure stays busy.” [back1111] [unlock11116]"
+11113,You,You: “Does he own a brown fishing jacket?”
+111131,Carter Plank,"“I dunno what he wears at work, sorry” [back1111]"
+11114,You,You: “Does he own a boat?”
+111141,Carter Plank,"“I think so, yeah yeah he’s talked about it before.” [back1111]"
+11115,You,You: “I think I have everything”
+111151,Carter Plank,“Hope I was some help.” [end]
+11116,You,[locked] You: “Do you think he might have any other jobs?”
+111161,Carter Plank,"“I mean, probably, guy’s gotta pay the bills right?” [back1111]"
+112,You,You: “Not unless you did something illegal.”
+1121,Carter Plank,"“Right, of course. Why’re you calling then?”"
+11211,You,You: “It’s about your uncle.” [back1111]
+113,You,You: “Not as long as you answer my questions fully.”
+1131,Carter Plank,“The fullest! I’ll spare no detail.”
+11311,You,You: “Who saw him last?”
+113111,Carter Plank,"“So- probably someone he worked with I assume. He works almost every day, whereas I only visit him a few times a month probably.”"
+1131111,Carter Plank,"“I saw him on the 3rd, just chatting, checking up. He lives alone so I try to make an effort in visiting him. I went by again on the 9th and he wasn’t there.”"
+11311111,Carter Plank,"“I called his boss and they said he hadn’t come in since the 7th, so after a bit more calling around I decided to call the police.” [back1131]"
+11312,You,You: “What did he do for work?”
+113121,Carter Plank,"“He was a fisherman primarily. Always out on the water, he loved it. I think I remember him saying he had some odd jobs here and there.”"
+1131211,Carter Plank,"“He went to Pettiget a lot, but I forget why…” [back1131]"
+11313,You,You: “Does he own a brown fishing jacket?”
+113131,Carter Plank,"“Oh jeez, I’ll have to really wrack my memory”"
+1131311,Carter Plank,“I don’t– I mean–... probably?”
+11313111,Carter Plank,“That’s the best I can remember” [back1131]
+11314,You,You: “Does he own a boat?”
+113141,Carter Plank,"“Sure does, dunno how he’d– y'know, be a fisherman without one.” [back1131]"
+11315,You,You: “I think that’s enough”
+113151,Carter Plank,"“I’m good, right?” [end]"
+2,You,"You: “I’m a detective, is this Carter Plank?”"
+21,Carter Plank,“Mmmmmmyyesss?”
+211,You,"You: “I’ve just got a few questions about your uncle, Timothy Plank.”"
+2111,Carter Plank,“Oh that makes sense.” [back1111]
+212,You,You: “..are you sure?”
+2121,Carter Plank,“Yeah.”
+21211,Carter Plank,“Sorry I’m just tired.”
+212111,You,You: “I need to talk to you about your uncle.” [back1111]
+3,You,You: “Could I just have a moment of your time?”
+31,Carter Plank,"“Whatever it is, I don't want it.”"
+311,You,"You: “I’m not a salesperson, I’m a detective.”"
+3111,Carter Plank,“You shoulda led with that then. What’s up?”
+31111,You,You: “I need to know when your uncle was last seen.”
+311111,Carter Plank,"“By me? On the 3rd. I didn’t see him every day though, I mean– I only noticed he was missing about a week later.” [back3111]"
+31112,You,You: “What does Timothy Plank do for work?”
+311121,Carter Plank,"“He’s a fisherman, through and through. Always busy too.” [back3111]"
+31113,You,You: “Do you know if your uncle owns a brown fishing jacket?”
+311131,Carter Plank,“I would assume so. He’s got all that sorta stuff.” [back3111]
+31114,You,You: “Does your uncle own a boat?”
+311141,Carter Plank,“Sure does. I don’t think it’s anything fancy though.” [back3111]
+31115,You,You: “That’s everything.” [end]
+312,You,You: “It’s about your uncle.”
+3121,Carter Plank,“Oh? Is there any news about him?”
+31211,You,"You: “Maybe, I just have a few questions.” [back1111]"

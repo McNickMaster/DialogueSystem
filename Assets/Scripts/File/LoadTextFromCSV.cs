@@ -110,8 +110,7 @@ public class LoadTextFromCSV : MonoBehaviour
             Debug.Log("start paths");  
             foreach(Path path in branch.myPathOptions)
             {
-                if(path != null)
-                {
+               
                     
                     Debug.Log("start slides");
                     foreach(Slide slide in path.slides)
@@ -120,7 +119,7 @@ public class LoadTextFromCSV : MonoBehaviour
                     }
                     Debug.Log("end slides");
 
-                }
+                
             }
             Debug.Log("end paths");
         }
@@ -189,8 +188,6 @@ public class LoadTextFromCSV : MonoBehaviour
                 {
                     pathChoices[i] = GetRestOfPath(slide);
                 }
-                
-                //list[i].Value + " " + list[i].Key
 
                 //Debug.Log("      " + list[i].Value + " " + list[i].Key);
             }
@@ -278,7 +275,7 @@ public class LoadTextFromCSV : MonoBehaviour
             string startID = ""+firstSlideInPath.ID;
 
 //            Debug.Log(startID + " = " + id);
-//           Debug.Log("     " + id.StartsWith(startID));
+//            Debug.Log("     " + id.StartsWith(startID));
             bool flag = true;
 
             //int x;
@@ -335,14 +332,17 @@ okay so this function is just incorrect. it does not look at the rest of the str
     public List<List<KeyValuePair<int,int>>> FindAllBranches()
     {
         tree = new List<List<KeyValuePair<int,int>>>();
-        List<KeyValuePair<int,int>> root = FindBranchAt(0,0,"");
+        List<KeyValuePair<int,int>> root = FindBranchAt(0,0,data.Count,"");
         tree.Add(root);
         List<KeyValuePair<int,int>> temp = new List<KeyValuePair<int,int>>();
+
+        int startLine, endLine;
         
-        for(int j = 0; j < 6; j++)
+        for(int j = 0; j < 8; j++)
         {
             for(int i = 0; i < root.Count; i++)
             {
+                
                 string s = "";
                 if(tree.Count > 1)
                 {
@@ -351,8 +351,18 @@ okay so this function is just incorrect. it does not look at the rest of the str
                 {
                     s=root[0].Value + "";
                 }
-                temp = FindBranchAt(j, root[i].Key, "" + s);
-                Debug.Log("finding branches: " + root[i].Value + " " + s);
+
+                startLine = root[i].Key;
+                if(i+1 < root.Count)
+                { 
+                    endLine = root[i+1].Key;
+                } else 
+                {
+                    endLine = data.Count;
+                }
+
+                temp = FindBranchAt(j, startLine, endLine, "" + s);
+//                Debug.Log("finding branches: " + root[i].Value + " " + s);
 
                 if(temp == null)
                 {
@@ -364,24 +374,20 @@ okay so this function is just incorrect. it does not look at the rest of the str
 //                        Debug.Log("temp was already in tree: " + temp[0].Value);
                     } else 
                     {
-                        tree.Add(temp);
+                        //tree.Add(temp);
                     }
+
+                    tree.Add(temp);
                     
                 }
-                    
-                
-                
             }
-
         }
-        
-        
-        
+
 
         return tree;
     }
 
-    List<KeyValuePair<int,int>> FindBranchAt(int startDigit, int startLine, string subString)
+    List<KeyValuePair<int,int>> FindBranchAt(int startDigit, int startLine, int endLine, string subString)
     { 
         List<KeyValuePair<int,int>> branch1 = new List<KeyValuePair<int,int>>();
         
@@ -391,7 +397,7 @@ okay so this function is just incorrect. it does not look at the rest of the str
 
 
         //get digits line by line    
-        for(int j = startLine; j < data.Count; j++)
+        for(int j = startLine; j < endLine; j++)
         {
             string id = data[j].ID;
         
@@ -419,13 +425,15 @@ okay so this function is just incorrect. it does not look at the rest of the str
 
                         } else if(id.Length > 1)
                         {
-                            check = false;
+                            //check = false;
                         }
 
                         if(check)
                         {
                           branch1.Add(pair);
                         }
+
+                        Debug.Log("pair to add: " + pair.Key + " " + pair.Value);
                     }
                         
 

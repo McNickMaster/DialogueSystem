@@ -5,6 +5,7 @@ ID,TITLE,BODY
 111,You,“Who called it in?”
 1111,Officer Jameson,"“Some local saw it first, called it in but didn’t stick around”[back11]"
 112,You,“What’d you see when you got here?”
+1121,Officer Jameson,"“Everything you see here, except the driver was still alive.”[back11][unlock115]"
 113,You,“When did you get here?”
 1131,Officer Jameson,“Around 1:30 I wanna say?”[back11]
 114,You,"“That’s all for now, thanks”[end]"
@@ -14,20 +15,20 @@ ID,TITLE,BODY
 2,You,"“‘Good’ is debatable, given the circumstances”"
 21,Officer Jameson,“I’m doing fine.”
 211,You,"“Not the point, listen, can you answer some questions?”"
-2111,Officer Jameson,“If I gotta”[back213]
+2111,Officer Jameson,“If I gotta”[back2131]
 212,You,“Hm. You got a minute?”
-2121,Officer Jameson,“I guess.”[back213]
+2121,Officer Jameson,“I guess.”[back2131]
 213,You,*jump right to your questions*
-2131,You,“Who called it in?”
-21311,Officer Jameson,"“Oh I dunno, some local driver. Doubt he stuck around”[back213]"
-2132,You,“What’d you see when you got here?”
-21321,Officer Jameson,"“All this, just darker. Oh, and the driver was alive I suppose.”[back213][unlock2135]"
-2133,You,“When did you get here?”
-21331,Officer Jameson,“Sometime around 1:30”[back213]
-2134,You,"“That’s all for now, thanks”[end]"
-2135,You,[locked] “You said he was still alive?”
-21351,Officer Jameson,"“Yep, when I arrived it looked like he was frozen to his seat. I snapped him out of it I think, but then he just started spouting nonsense”"
-213511,Officer Jameson,"“I removed him from the truck, and he wasn’t even bleeding that badly, but then next thing you know he collapses into me, dead.”[back213]"
+21311,You,“Who called it in?”
+213111,Officer Jameson,"“Oh I dunno, some local driver. Doubt he stuck around”[back2131]"
+21312,You,“What’d you see when you got here?”
+213121,Officer Jameson,"“All this, just darker. Oh, and the driver was alive I suppose.”[back2131][unlock2135]"
+21313,You,“When did you get here?”
+213131,Officer Jameson,“Sometime around 1:30”[back2131]
+21314,You,"“That’s all for now, thanks”[end]"
+21315,You,[locked] “You said he was still alive?”
+213151,Officer Jameson,"“Yep, when I arrived it looked like he was frozen to his seat. I snapped him out of it I think, but then he just started spouting nonsense”"
+2131511,Officer Jameson,"“I removed him from the truck, and he wasn’t even bleeding that badly, but then next thing you know he collapses into me, dead.”[back2131]"
 3,You,“I have some questions”
 31,Officer Jameson,“Shoot.”
 311,You,"“You were the first one here, right?”"

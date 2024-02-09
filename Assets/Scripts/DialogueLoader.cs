@@ -127,7 +127,7 @@ public class DialogueLoader : MonoBehaviour
             {
                 case PathEndBehaviour.GOTO:
                 {
-                    Debug.Log("trying to spawn new branch with id: " + currentPath.gotoID);
+                    Debug.Log(currentPath.firstSlide.ID + " to spawn new branch with id: " + currentPath.gotoID);
                     SpawnBranch(FindBranch(currentPath.gotoID));
                     break;
                 }

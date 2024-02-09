@@ -48,6 +48,7 @@ ID,TITLE,BODY
 111,You,“Who called it in?”
 1111,Officer Jameson,"“Some local saw it first, called it in but didn’t stick around”[back11]"
 112,You,“What’d you see when you got here?”
+1121,Officer Jameson,"“Everything you see here, except the driver was still alive.”[back11][unlock115]"
 113,You,“When did you get here?”
 1131,Officer Jameson,“Around 1:30 I wanna say?”[back11]
 114,You,"“That’s all for now, thanks”[end]"
@@ -57,20 +58,20 @@ ID,TITLE,BODY
 2,You,"“‘Good’ is debatable, given the circumstances”"
 21,Officer Jameson,“I’m doing fine.”
 211,You,"“Not the point, listen, can you answer some questions?”"
-2111,Officer Jameson,“If I gotta”[back213]
+2111,Officer Jameson,“If I gotta”[back2131]
 212,You,“Hm. You got a minute?”
-2121,Officer Jameson,“I guess.”[back213]
+2121,Officer Jameson,“I guess.”[back2131]
 213,You,*jump right to your questions*
-2131,You,“Who called it in?”
-21311,Officer Jameson,"“Oh I dunno, some local driver. Doubt he stuck around”[back213]"
-2132,You,“What’d you see when you got here?”
-21321,Officer Jameson,"“All this, just darker. Oh, and the driver was alive I suppose.”[back213][unlock2135]"
-2133,You,“When did you get here?”
-21331,Officer Jameson,“Sometime around 1:30”[back213]
-2134,You,"“That’s all for now, thanks”[end]"
-2135,You,[locked] “You said he was still alive?”
-21351,Officer Jameson,"“Yep, when I arrived it looked like he was frozen to his seat. I snapped him out of it I think, but then he just started spouting nonsense”"
-213511,Officer Jameson,"“I removed him from the truck, and he wasn’t even bleeding that badly, but then next thing you know he collapses into me, dead.”[back213]"
+21311,You,“Who called it in?”
+213111,Officer Jameson,"“Oh I dunno, some local driver. Doubt he stuck around”[back2131]"
+21312,You,“What’d you see when you got here?”
+213121,Officer Jameson,"“All this, just darker. Oh, and the driver was alive I suppose.”[back2131][unlock2135]"
+21313,You,“When did you get here?”
+213131,Officer Jameson,“Sometime around 1:30”[back2131]
+21314,You,"“That’s all for now, thanks”[end]"
+21315,You,[locked] “You said he was still alive?”
+213151,Officer Jameson,"“Yep, when I arrived it looked like he was frozen to his seat. I snapped him out of it I think, but then he just started spouting nonsense”"
+2131511,Officer Jameson,"“I removed him from the truck, and he wasn’t even bleeding that badly, but then next thing you know he collapses into me, dead.”[back2131]"
 3,You,“I have some questions”
 31,Officer Jameson,“Shoot.”
 311,You,"“You were the first one here, right?”"
@@ -314,3 +315,168 @@ ID,TITLE,BODY
 312,You,You: “It’s about Evan.”
 3121,Vivian DeTour,“...”
 31211,Vivian DeTour,“Did you find him?”[back212]
+@0,Renee Bondopulos,“Hello?”
+1,You,"“Hello, is this Renee Bondopulos?”"
+11,Renee Bondopulos,"“This is her, and you are?”"
+111,You,“I’m a detective with the ACPD.”
+1111,Renee Bondopulos,"“I see, and you’re calling about…?”"
+11111,You,"“Your father, Eugene.”"
+111111,You,“When did you last see him?”
+1111111,Renee Bondopulos,"“April 5th. He seemed excited, but also busy, so I didn’t want to bother him with questions. Didn’t see him around much that day, then the next day when he wasn’t at home I reported him missing.” [back11111] [unlock111114]"
+111112,You,“Does he own a brown fishing jacket?”
+1111121,Renee Bondopulos,"“He definitely could’ve, he owned a lot of fishing gear.” [back11111]"
+111113,You,“No further questions.” [end]
+111114,You,[locked] “What was he busy doing?”
+1111141,Renee Bondopulos,"“Oh I dunno, he was digging through his closet when I looked in.” [back11111]"
+112,You,“I’m curious what you can tell me about Eugene Bondopulos.”
+1121,Renee Bondopulos,“No thanks.” *click* [end]
+2,You,"“Hello, I just have a few questions about Eugene Bondopulos.”"
+21,Renee Bondopulos,“Why? Who are you?”
+211,You,"“I’m a detective, I just need to get some more information about your father.”"
+2111,Renee Bondopulos,“Very well I suppose.” [back11111]
+212,You,"“That’s not important, just answer my questions.”"
+2121,Renee Bondopulos,"“Mmmm. No, and don’t call back.” [end]"
+3,You,"“This is the Abra Police Department, do you have a moment?”"
+31,Renee Bondopulos,“Why?”
+311,You,“I was hoping you could answer some questions about your father.”
+3111,Renee Bondopulos,"“Alright, I’ve got a second”"
+31111,You,“When did you last see Eugene?”
+311111,Renee Bondopulos,"“April 5th, he was busy in his room so I didn’t bug him. I went to school and when I got back he was gone.” [back3111]"
+31112,You,“Does Eugene go fishing often?”
+311121,Renee Bondopulos,"“Oh all the time. He was a fisher, and even when he wasn’t at work, all he wanted to do was fish.” [back3111]"
+31113,You,“Does your father own a brown fishing jacket?”
+311131,Renee Bondopulos,"“Probably. I don’t know for sure, but he had all sorts of fishing gear.” [back3111]"
+31114,You,"“That’s all, thanks for your help.” [end]"
+312,You,“I’m working a case and need to ID the victim.”
+3121,Renee Bondopulos,“You think it may be my father?”
+31211,Renee Bondopulos,“...what do you need to know?”
+312111,You,“When did you last see Eugene?”
+3121111,Renee Bondopulos,"“April 5th, he was busy in his room so I didn’t bug him. I went to school and when I got back he was gone.” [back31211]"
+312112,You,“Does Eugene go fishing often?”
+3121121,Renee Bondopulos,"“Oh all the time. He was a fisher, and even when he wasn’t at work, all he wanted to do was fish.” [back31211]"
+312113,You,“Does your father own a brown fishing jacket?”
+3121131,Renee Bondopulos,"“Probably. I don’t know for sure, but he had all sorts of fishing gear.” [back31211]"
+312114,You,"“That’s all, thanks for your help.”"
+3121141,Renee Bondopulos,"“Wait, is that enough? Is it… did you find Dad?”"
+31211411,You,"“It’s not him, don’t worry.” [end]"
+31211412,You,"“Possibly, we’ll be in touch.” [end]"
+31211413,You,"“Unfortunately it’s likely, someone from the department will call you soon.” [end]"
+@0,Carter Plank,"“Hello, who is this?”"
+1,You,"You: “I’m just calling from the Abra Police Department, got a few questions.”"
+11,Carter Plank,“I’m not in trouble am I?”
+111,You,"You: “No you’re not, I just need to talk about Timothy Plank.”"
+1111,Carter Plank,"“Oh, right. What do you need to know?”"
+11111,You,You: “Who saw him last?”
+111111,Carter Plank,"“Probably his buddies at work. I talked to him earlier this month, around the 3rd maybe.”"
+1111111,Carter Plank,"“When I went by on the 9th just to say hi he wasn’t around, and his boss said he hadn’t been to work in a day or two, so that's when I reported him missing” [back1111]"
+11112,You,You: “What does he do for work?”
+111121,Carter Plank,"“He’s a fisherman, works around here in Oldport. I don’t really know exactly what he does, but he sure stays busy.” [back1111] [unlock11116]"
+11113,You,You: “Does he own a brown fishing jacket?”
+111131,Carter Plank,"“I dunno what he wears at work, sorry” [back1111]"
+11114,You,You: “Does he own a boat?”
+111141,Carter Plank,"“I think so, yeah yeah he’s talked about it before.” [back1111]"
+11115,You,You: “I think I have everything”
+111151,Carter Plank,“Hope I was some help.” [end]
+11116,You,[locked] You: “Do you think he might have any other jobs?”
+111161,Carter Plank,"“I mean, probably, guy’s gotta pay the bills right?” [back1111]"
+112,You,You: “Not unless you did something illegal.”
+1121,Carter Plank,"“Right, of course. Why’re you calling then?”"
+11211,You,You: “It’s about your uncle.” [back1111]
+113,You,You: “Not as long as you answer my questions fully.”
+1131,Carter Plank,“The fullest! I’ll spare no detail.”
+11311,You,You: “Who saw him last?”
+113111,Carter Plank,"“So- probably someone he worked with I assume. He works almost every day, whereas I only visit him a few times a month probably.”"
+1131111,Carter Plank,"“I saw him on the 3rd, just chatting, checking up. He lives alone so I try to make an effort in visiting him. I went by again on the 9th and he wasn’t there.”"
+11311111,Carter Plank,"“I called his boss and they said he hadn’t come in since the 7th, so after a bit more calling around I decided to call the police.” [back1131]"
+11312,You,You: “What did he do for work?”
+113121,Carter Plank,"“He was a fisherman primarily. Always out on the water, he loved it. I think I remember him saying he had some odd jobs here and there.”"
+1131211,Carter Plank,"“He went to Pettiget a lot, but I forget why…” [back1131]"
+11313,You,You: “Does he own a brown fishing jacket?”
+113131,Carter Plank,"“Oh jeez, I’ll have to really wrack my memory”"
+1131311,Carter Plank,“I don’t– I mean–... probably?”
+11313111,Carter Plank,“That’s the best I can remember” [back1131]
+11314,You,You: “Does he own a boat?”
+113141,Carter Plank,"“Sure does, dunno how he’d– y'know, be a fisherman without one.” [back1131]"
+11315,You,You: “I think that’s enough”
+113151,Carter Plank,"“I’m good, right?” [end]"
+2,You,"You: “I’m a detective, is this Carter Plank?”"
+21,Carter Plank,“Mmmmmmyyesss?”
+211,You,"You: “I’ve just got a few questions about your uncle, Timothy Plank.”"
+2111,Carter Plank,“Oh that makes sense.” [back1111]
+212,You,You: “..are you sure?”
+2121,Carter Plank,“Yeah.”
+21211,Carter Plank,“Sorry I’m just tired.”
+212111,You,You: “I need to talk to you about your uncle.” [back1111]
+3,You,You: “Could I just have a moment of your time?”
+31,Carter Plank,"“Whatever it is, I don't want it.”"
+311,You,"You: “I’m not a salesperson, I’m a detective.”"
+3111,Carter Plank,“You shoulda led with that then. What’s up?”
+31111,You,You: “I need to know when your uncle was last seen.”
+311111,Carter Plank,"“By me? On the 3rd. I didn’t see him every day though, I mean– I only noticed he was missing about a week later.” [back3111]"
+31112,You,You: “What does Timothy Plank do for work?”
+311121,Carter Plank,"“He’s a fisherman, through and through. Always busy too.” [back3111]"
+31113,You,You: “Do you know if your uncle owns a brown fishing jacket?”
+311131,Carter Plank,“I would assume so. He’s got all that sorta stuff.” [back3111]
+31114,You,You: “Does your uncle own a boat?”
+311141,Carter Plank,“Sure does. I don’t think it’s anything fancy though.” [back3111]
+31115,You,You: “That’s everything.” [end]
+312,You,You: “It’s about your uncle.”
+3121,Carter Plank,“Oh? Is there any news about him?”
+31211,You,"You: “Maybe, I just have a few questions.” [back1111]"
+@0,Daisy Beebug,“Hello?”
+1,You,"“Hello, am I speaking to Daisy Beebug?”"
+11,Daisy Beebug,“You are. Who is this?”
+111,You,"“I’m with the ACPD, calling about Tara Pesci.”"
+1111,Daisy Beebug,"“Oh oh oh, do you have any leads yet?”"
+11111,Daisy Beebug,"“I’m starting to be really worried, like– even more worried than I already was.”"
+111111,You,"“Possibly, I need you to answer some questions to help.”"
+1111111,Daisy Beebug,"“Ok, of course, what do you need to know?”"
+11111111,You,“When did you last see Tara?”
+111111111,Daisy Beebug,"“April 9th, she went out to work at the same time she always does.”"
+1111111111,Daisy Beebug,"“Even though she didn’t come home that night, I didn’t think much of it, she typically hangs out with friends way past when I go to sleep.”"
+11111111111,Daisy Beebug,"“When I woke up and she wasn’t there, that’s when I knew something was wrong.” [back1111111]"
+11111112,You,“What does Tara do for work?”
+111111121,Daisy Beebug,"“She’s a fisherwoman here in Oldport, she’s got a few side gigs too.” [back1111111] [unlock11111116]"
+11111113,You,“Does Tara own a brown fishing jacket?”
+111111131,Daisy Beebug,"“Absolutely not. Brown is not her color, and she’s got such a small wardrobe I know all of it.” [back1111111]"
+11111114,You,“Does Tara own a boat?”
+111111141,Daisy Beebug,"“Mhm. It’s– kind of falling apart, but she loves it.” [back1111111]"
+11111115,You,"“That’s all, thanks for your help.”"
+111111151,Daisy Beebug,"“You’ll call me if you find her, right?”"
+1111111511,You,“You’ll be notified immediately” [end]
+11111116,You,[locked] “What sort of side gigs?”
+111111161,Daisy Beebug,"“Ohhh– tours occasionally, she sometimes takes people or packages to Pettiget.” [back1111111]"
+111112,You,"“We’re working on it, I’m sure she’s okay, I just have some questions for you.” [back1111111]"
+112,You,“I’m a detective.”
+1121,Daisy Beebug,“...is this about Tara?”
+11211,You,"“Yes, I’ve just got a few questions.” [back1111111]"
+2,You,"“Hi, I’m calling with a few questions about Tara Pesci.”"
+21,Daisy Beebug,“Are you like- a reporter or something?”
+211,You,"“..yes, I am.”"
+2111,Daisy Beebug,"“Well, I’m glad Tara’s disappearance is finally getting some attention. What are your questions?”"
+21111,You,“When did you last see Tara?”
+211111,Daisy Beebug,"“I saw her on the 9th when she went to work, I didn’t think much of it when she didn’t come back in the night, she hung out with her friends a lot.” [back2111]"
+21112,You,“What does Tara do for work?”
+211121,Daisy Beebug,"“She’s a fisherwoman, and a damn good one! Make sure to add that.” [back2111]"
+21113,You,“Does Tara own a brown fishing jacket?”
+211131,Daisy Beebug,“Does she– what? Why is that relevant?”
+2111311,You,“One was found in a wreck that just washed up.”
+21113111,Daisy Beebug,“Wh- what? Oh… weird.”
+211131111,Daisy Beebug,"“Uh, no, she doesn’t have a brown jacket. Brown doesn’t suit her.” [back2111]"
+2111312,You,“I didn’t write the questions.”
+21113121,Daisy Beebug,"“Okayyy… well, no, she doesn’t have one.” [back2111]"
+21114,You,“Does Tara own a boat?”
+211141,Daisy Beebug,"“Mhm! Just a little thing, but it’s her pride and joy.” [back2111]"
+21115,You,"“That’s everything, thanks for your time.” [end]"
+212,You,“I’m a detective.”
+2121,Daisy Beebug,“Oh! Have you found her? Do you have a lead?”
+21211,You,“We’re working on it.”
+212111,Daisy Beebug,"“Well, ask your questions then!” [back1111111]"
+21212,You,“Nothing solid yet.”
+212121,Daisy Beebug,"“That’s too bad… ask whatever you need to, I suppose.” [back1111111]"
+3,You,"“I’m a detective with Abra PD, do you have a second?”"
+31,Daisy Beebug,"“Oh, yes I suppose so. Is this about Tara?”"
+311,You,"“It is, I just have a few questions that would help our investigation.”"
+3111,Daisy Beebug,"“Well then I have more than a second, what do you need?” [back1111111]"
+312,You,"“It’s for a different case, but related.”"
+3121,Daisy Beebug,"“Very well, how can I help?” [back1111111]"

@@ -1,0 +1,58 @@
+ID,TITLE,BODY
+0,Daisy Beebug,“Hello?”
+1,You,"“Hello, am I speaking to Daisy Beebug?”"
+11,Daisy Beebug,“You are. Who is this?”
+111,You,"“I’m with the ACPD, calling about Tara Pesci.”"
+1111,Daisy Beebug,"“Oh oh oh, do you have any leads yet?”"
+11111,Daisy Beebug,"“I’m starting to be really worried, like– even more worried than I already was.”"
+111111,You,"“Possibly, I need you to answer some questions to help.”"
+1111111,Daisy Beebug,"“Ok, of course, what do you need to know?”"
+11111111,You,“When did you last see Tara?”
+111111111,Daisy Beebug,"“April 9th, she went out to work at the same time she always does.”"
+1111111111,Daisy Beebug,"“Even though she didn’t come home that night, I didn’t think much of it, she typically hangs out with friends way past when I go to sleep.”"
+11111111111,Daisy Beebug,"“When I woke up and she wasn’t there, that’s when I knew something was wrong.” [back1111111]"
+11111112,You,“What does Tara do for work?”
+111111121,Daisy Beebug,"“She’s a fisherwoman here in Oldport, she’s got a few side gigs too.” [back1111111] [unlock11111116]"
+11111113,You,“Does Tara own a brown fishing jacket?”
+111111131,Daisy Beebug,"“Absolutely not. Brown is not her color, and she’s got such a small wardrobe I know all of it.” [back1111111]"
+11111114,You,“Does Tara own a boat?”
+111111141,Daisy Beebug,"“Mhm. It’s– kind of falling apart, but she loves it.” [back1111111]"
+11111115,You,"“That’s all, thanks for your help.”"
+111111151,Daisy Beebug,"“You’ll call me if you find her, right?”"
+1111111511,You,“You’ll be notified immediately” [end]
+11111116,You,[locked] “What sort of side gigs?”
+111111161,Daisy Beebug,"“Ohhh– tours occasionally, she sometimes takes people or packages to Pettiget.” [back1111111]"
+111112,You,"“We’re working on it, I’m sure she’s okay, I just have some questions for you.” [back1111111]"
+112,You,“I’m a detective.”
+1121,Daisy Beebug,“...is this about Tara?”
+11211,You,"“Yes, I’ve just got a few questions.” [back1111111]"
+2,You,"“Hi, I’m calling with a few questions about Tara Pesci.”"
+21,Daisy Beebug,“Are you like- a reporter or something?”
+211,You,"“..yes, I am.”"
+2111,Daisy Beebug,"“Well, I’m glad Tara’s disappearance is finally getting some attention. What are your questions?”"
+21111,You,“When did you last see Tara?”
+211111,Daisy Beebug,"“I saw her on the 9th when she went to work, I didn’t think much of it when she didn’t come back in the night, she hung out with her friends a lot.” [back2111]"
+21112,You,“What does Tara do for work?”
+211121,Daisy Beebug,"“She’s a fisherwoman, and a damn good one! Make sure to add that.” [back2111]"
+21113,You,“Does Tara own a brown fishing jacket?”
+211131,Daisy Beebug,“Does she– what? Why is that relevant?”
+2111311,You,“One was found in a wreck that just washed up.”
+21113111,Daisy Beebug,“Wh- what? Oh… weird.”
+211131111,Daisy Beebug,"“Uh, no, she doesn’t have a brown jacket. Brown doesn’t suit her.” [back2111]"
+2111312,You,“I didn’t write the questions.”
+21113121,Daisy Beebug,"“Okayyy… well, no, she doesn’t have one.” [back2111]"
+21114,You,“Does Tara own a boat?”
+211141,Daisy Beebug,"“Mhm! Just a little thing, but it’s her pride and joy.” [back2111]"
+21115,You,"“That’s everything, thanks for your time.” [end]"
+212,You,“I’m a detective.”
+2121,Daisy Beebug,“Oh! Have you found her? Do you have a lead?”
+21211,You,“We’re working on it.”
+212111,Daisy Beebug,"“Well, ask your questions then!” [back1111111]"
+21212,You,“Nothing solid yet.”
+212121,Daisy Beebug,"“That’s too bad… ask whatever you need to, I suppose.” [back1111111]"
+3,You,"“I’m a detective with Abra PD, do you have a second?”"
+31,Daisy Beebug,"“Oh, yes I suppose so. Is this about Tara?”"
+311,You,"“It is, I just have a few questions that would help our investigation.”"
+3111,Daisy Beebug,"“Well then I have more than a second, what do you need?” [back1111111]"
+312,You,"“It’s for a different case, but related.”"
+3121,Daisy Beebug,"“Very well, how can I help?” [back1111111]"
